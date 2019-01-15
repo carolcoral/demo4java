@@ -1,0 +1,22 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "site.cnkj.es.config.ElasticConfig",
+      "name": "common.elasticsearch",
+      "type": "site.cnkj.es.config.ElasticConfig"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "site.cnkj.es.config.ElasticConfig",
+      "name": "common.elasticsearch.size",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "site.cnkj.es.config.ElasticConfig",
+      "name": "common.elasticsearch.timeout",
+      "type": "java.lang.String"
+    }
+  ]
+}

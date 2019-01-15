@@ -17,12 +17,21 @@ import site.cnkj.util.CommonConstant;
  */
 @Data
 @Configuration
+<<<<<<< HEAD:common/src/main/java/site/cnkj/util/config/RedisSubListenerConfig.java
 public class RedisSubListenerConfig{
 
     String channel = "";
 
     public RedisSubListenerConfig(@Value("${spring.redis.subdescription.name}") String name) {
         this.channel = name;
+=======
+public class RedisSubListenerConfig {
+    
+    String channel = "";
+
+    public RedisSubListenerConfig(@Value("${spring.application.name}") String name) {
+        this.channel = name + ":" + CommonConstant.REDIS.ESScrollId;
+>>>>>>> 5d7d908a4b1e4fbaa89fe844d63f102e71dc1285:ElasticSearch/src/main/java/site/cnkj/es/config/RedisSubListenerConfig.java
     }
 
     /**
