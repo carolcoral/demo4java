@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import site.cnkj.es.service.ElasticSearchService;
-import site.cnkj.util.config.SubDescription;
+import site.cnkj.util.domain.SubDescription;
 
 /*
  * @version 1.0 created by LXW on 2019/1/15 15:36

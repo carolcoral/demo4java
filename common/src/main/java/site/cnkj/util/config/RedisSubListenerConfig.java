@@ -9,7 +9,7 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.listener.PatternTopic;
 import org.springframework.data.redis.listener.RedisMessageListenerContainer;
 import org.springframework.data.redis.listener.adapter.MessageListenerAdapter;
-import site.cnkj.util.CommonConstant;
+import site.cnkj.util.domain.SubDescription;
 
 
 /*
@@ -17,21 +17,12 @@ import site.cnkj.util.CommonConstant;
  */
 @Data
 @Configuration
-<<<<<<< HEAD:common/src/main/java/site/cnkj/util/config/RedisSubListenerConfig.java
 public class RedisSubListenerConfig{
 
     String channel = "";
 
     public RedisSubListenerConfig(@Value("${spring.redis.subdescription.name}") String name) {
         this.channel = name;
-=======
-public class RedisSubListenerConfig {
-    
-    String channel = "";
-
-    public RedisSubListenerConfig(@Value("${spring.application.name}") String name) {
-        this.channel = name + ":" + CommonConstant.REDIS.ESScrollId;
->>>>>>> 5d7d908a4b1e4fbaa89fe844d63f102e71dc1285:ElasticSearch/src/main/java/site/cnkj/es/config/RedisSubListenerConfig.java
     }
 
     /**
