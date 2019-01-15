@@ -17,13 +17,12 @@ import java.util.List;
  */
 @Configuration
 public class RedisSubListenerConfig {
-    //不同的频道名
-    private List<String> channels;
+    
+    String channel = "";
 
-    @Value("${spring.application.name}")
-    private String serviceName;
-
-    private String channel = CommonConstant.REDIS.ESScrollId;
+    public RedisSubListenerConfig(@Value("${spring.application.name}") String name) {
+        this.channel = name + ":" + CommonConstant.REDIS.ESScrollId;
+    }
 
     /**
      * redis消息监听器容器
