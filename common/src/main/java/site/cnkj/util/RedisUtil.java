@@ -12,7 +12,7 @@ public class RedisUtil{
     private RedisTemplate<String, Object> redisTemplate;
 
     //设置的默认前缀，可以为空
-    @Value("${spring.application.name:''}")
+    @Value("${spring.application.name}")
     private String redisName;
 
 
@@ -768,11 +768,13 @@ public class RedisUtil{
      */
     public void releaseMessage(String channel, String message, boolean needServiceName){
         try {
+            String channelName = new String();
             if (needServiceName){
-                redisTemplate.convertAndSend(redisName+":"+channel, message);
-            }else if (needServiceName == false){
-                redisTemplate.convertAndSend(channel, message);
+                channelName = redisName + ":" + channel;
+            }else {
+                channelName = channel;
             }
+            redisTemplate.convertAndSend(channelName, message);
         } catch (Exception e) {
             e.printStackTrace();
         }

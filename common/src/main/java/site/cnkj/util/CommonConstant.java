@@ -12,7 +12,7 @@ public interface CommonConstant {
 
     public static class REDIS {
         //es查询的分页id
-        public static final String ESScrollId = "ElasticSearch_scrollId";
+        public static final String ESScrollId = "scrollId";
     }
 
 }

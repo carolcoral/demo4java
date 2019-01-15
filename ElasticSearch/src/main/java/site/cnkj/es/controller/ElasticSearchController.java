@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import site.cnkj.es.service.ElasticSearchService;
+import site.cnkj.util.CommonConstant;
 import site.cnkj.util.RedisUtil;
 import site.cnkj.util.domain.BaseResult;
 
@@ -33,8 +34,10 @@ public class ElasticSearchController {
     }
 
     @RequestMapping(value = "/channel",method = RequestMethod.POST)
-    public void releaseMessage(String channel, String message){
-        redisUtil.releaseMessage(channel, message, true);
+    public void releaseMessage(String message){
+        System.out.println("******message*******"+message);
+        redisUtil.releaseMessage("scrollId", message, true);
+        //redisUtil.releaseMessage("test", message, false);
     }
 
 }

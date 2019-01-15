@@ -7,6 +7,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 import site.cnkj.util.RedisUtil;
 import site.cnkj.util.config.ElasticsearchConfig;
 import site.cnkj.util.config.RedisConfig;
+import site.cnkj.util.config.RedisSubListenerConfig;
 import site.cnkj.util.config.RestTemplateConfig;
 
 import javax.annotation.Resource;
@@ -17,7 +18,8 @@ import javax.annotation.Resource;
 @ComponentScan(basePackages = "site.cnkj.es.*",basePackageClasses = {
         ElasticsearchConfig.class,
         RestTemplateConfig.class,
-        RedisConfig.class
+        RedisConfig.class,
+        RedisSubListenerConfig.class
 })
 @EnableAsync
 @SpringBootApplication
@@ -29,5 +31,7 @@ public class EsApplicationBoot {
 
     @Resource(name = "redisUtil")
     private RedisUtil redisUtil;
+
+
 
 }

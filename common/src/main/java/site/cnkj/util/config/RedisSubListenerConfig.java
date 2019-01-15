@@ -1,5 +1,6 @@
-package site.cnkj.es.config;
+package site.cnkj.util.config;
 
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -10,20 +11,19 @@ import org.springframework.data.redis.listener.RedisMessageListenerContainer;
 import org.springframework.data.redis.listener.adapter.MessageListenerAdapter;
 import site.cnkj.util.CommonConstant;
 
-import java.util.List;
 
 /*
  * @version 1.0 created by LXW on 2019/1/9 15:34
  */
+@Data
 @Configuration
-public class RedisSubListenerConfig {
-    //不同的频道名
-    private List<String> channels;
+public class RedisSubListenerConfig{
 
-    @Value("${spring.application.name}")
-    private String serviceName;
+    String channel = "";
 
-    private String channel = CommonConstant.REDIS.ESScrollId;
+    public RedisSubListenerConfig(@Value("${spring.redis.subdescription.name}") String name) {
+        this.channel = name;
+    }
 
     /**
      * redis消息监听器容器
