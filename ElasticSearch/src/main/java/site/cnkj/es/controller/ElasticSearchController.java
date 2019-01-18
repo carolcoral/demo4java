@@ -24,10 +24,10 @@ public class ElasticSearchController {
     @RequestMapping(value = "/start",method = RequestMethod.POST)
     public BaseResult startQuery(String startTime, String endTime){
         BaseResult baseResult = new BaseResult();
-        String index = "t3_java_monitor-*";
-        String filterKey = "";
-        String filterValue = "020010";
-        System.out.println(elasticSearchService.queryDataToKafka(index, filterKey, filterValue, startTime, endTime));
+        String index = "backend-tori-log-other-*";
+        String filterKey = "level";
+        String filterValue = "INFO";
+        elasticSearchService.queryDataToKafka(index, filterKey, filterValue, startTime, endTime);
         baseResult.setCode("000000");
         baseResult.setDesc("success");
         return baseResult;

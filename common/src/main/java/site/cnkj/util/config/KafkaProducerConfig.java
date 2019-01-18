@@ -1,4 +1,4 @@
-package site.cnkj.es.config;
+package site.cnkj.util.config;
 
 import lombok.Data;
 import org.apache.kafka.clients.admin.AdminClientConfig;
@@ -16,46 +16,46 @@ import java.util.Map;
 
 @Data
 @Configuration
-public class KafkaConfig {
+public class KafkaProducerConfig {
 
     @Value("${spring.kafka.producer.bootstrap.servers}")
     private String hosts;
 
     @Value("${spring.kafka.producer.key.serializer}")
-    private String key;
+    private String key = "org.apache.kafka.common.serialization.StringSerializer";
 
     @Value("${spring.kafka.producer.value.serializer}")
-    private String value;
+    private String value = "org.apache.kafka.common.serialization.StringSerializer";
 
     @Value("${spring.kafka.producer.acks}")
-    private String acks;
+    private String acks = "all";
 
     @Value("${spring.kafka.producer.retries}")
-    private String retries;
+    private String retries = "0";
 
     @Value("${spring.kafka.producer.buffer.memory}")
-    private String bufferMemory;
+    private String bufferMemory = "3000000";
 
     @Value("${spring.kafka.producer.max.block.ms}")
-    private String maxBlockMs;
+    private String maxBlockMs = "6000";
 
     @Value("${spring.kafka.producer.compression.type}")
-    private String compressionType;
+    private String compressionType = "gzip";
 
     @Value("${spring.kafka.producer.batch.size}")
-    private String batchSize;
+    private String batchSize = "89590";
 
     @Value("${spring.kafka.producer.client.id}")
-    private String clientId;
+    private String clientId = "";
 
     @Value("${spring.kafka.connections.max.idle.ms}")
-    private String maxConnectionsIdleMs;
+    private String maxConnectionsIdleMs = "540000";
 
     @Value("${spring.kafka.max.request.size}")
-    private String maxRequestSize;
+    private String maxRequestSize = "206407532";
 
     @Value("${spring.kafka.topic.partitions}")
-    private String topicPartitions;
+    private String topicPartitions = "10";
 
     // ----------------producer---------------
     @Bean

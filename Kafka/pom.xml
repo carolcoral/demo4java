@@ -2,14 +2,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <artifactId>ElasticSearch</artifactId>
     <parent>
-        <groupId>site.cnkj</groupId>
         <artifactId>demo4java</artifactId>
+        <groupId>site.cnkj</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath><!-- lookup parent from repository -->
     </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>Kafka</artifactId>
+    <description>demo for kafka</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -34,16 +35,6 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-netflix-core</artifactId>
             <version>2.0.1.RELEASE</version>
@@ -55,34 +46,6 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.4</version>
-        </dependency>
-
-        <!--es for transport-->
-        <dependency>
-            <groupId>org.elasticsearch</groupId>
-            <artifactId>elasticsearch</artifactId>
-            <version>5.6.11</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.elasticsearch.client</groupId>
-            <artifactId>elasticsearch-rest-client</artifactId>
-            <version>5.6.11</version>
-        </dependency>
-
-        <!--es sniffer-->
-        <dependency>
-            <groupId>org.elasticsearch.client</groupId>
-            <artifactId>elasticsearch-rest-client-sniffer</artifactId>
-            <version>5.6.3</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <!--es for rest-high-level-client-->
-        <dependency>
-            <groupId>org.elasticsearch.client</groupId>
-            <artifactId>elasticsearch-rest-high-level-client</artifactId>
-            <version>5.6.11</version>
         </dependency>
 
         <dependency>
@@ -109,28 +72,10 @@
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
 
-        <!-- redis -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-pool2</artifactId>
             <version>2.4.2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-redis</artifactId>
-            <version>2.0.6.RELEASE</version>
-        </dependency>
-
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-            <version>2.9.0</version>
         </dependency>
 
         <dependency>
@@ -159,7 +104,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>site.cnkj.es.EsApplicationBoot</mainClass>
+                    <mainClass>site.cnkj.es.KafkaApplicationBoot</mainClass>
                     <layout>ZIP</layout>
                 </configuration>
                 <executions>
@@ -172,5 +117,6 @@
             </plugin>
         </plugins>
     </build>
+
 
 </project>

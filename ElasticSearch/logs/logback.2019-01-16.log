@@ -1,0 +1,830 @@
+2019-01-16 09:43:58.719 logback [restartedMain] INFO  site.cnkj.es.EsApplicationBoot - The following profiles are active: dev
+2019-01-16 09:43:58.735 logback [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6de13f09: startup date [Wed Jan 16 09:43:58 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2cb9f6ea
+2019-01-16 09:44:00.506 logback [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-16 09:44:00.535 logback [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-16 09:44:01.113 logback [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=7e528926-97b6-39d4-85c3-6414ea96e531
+2019-01-16 09:44:01.128 logback [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-16 09:44:01.247 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$37c7d569] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-16 09:44:01.337 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$802fc6e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-16 09:44:02.171 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 18083 (http)
+2019-01-16 09:44:02.198 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-01-16 09:44:02.198 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-01-16 09:44:02.202 logback [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Python3.7\Scripts\;D:\Python3.7\;D:\Python2.7\;D:\Python2.7\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;.%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.ja;D:\Lua\5.1;D:\Lua\5.1\clibs;C:\WINDOWS\System32\OpenSSH\;D:\nodejs\;D:\Yarn\bin\;D:\SVN\bin;D:\git\cmd;C:\Users\Carol\AppData\Local\GitHubDesktop\bin;D:\Fiddle\Fiddler;D:\Python2.7\Lib\site-packages\django;D:\Python2.7\Scripts;C:\Users\Carol\AppData\Local\Microsoft\WindowsApps;C:\Users\Carol\AppData\Roaming\npm;"D:\JDK1.7\bin;D:\JDK1.7\jre\bin";D:\apache-maven-3.5.4\bin;C:\Users\Carol\AppData\Local\Yarn\bin;.]
+2019-01-16 09:44:02.496 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-01-16 09:44:02.496 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3761 ms
+2019-01-16 09:44:02.817 logback [localhost-startStop-1] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-16 09:44:02.818 logback [localhost-startStop-1] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-16 09:44:02.831 logback [localhost-startStop-1] INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6e88ab3
+2019-01-16 09:44:05.351 logback [localhost-startStop-1] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-01-16 09:44:07.394 logback [localhost-startStop-1] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-01-16 09:44:08.463 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-16 09:44:08.464 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-01-16 09:44:08.464 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-16 09:44:08.464 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-16 09:44:08.464 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-16 09:44:08.464 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpTraceFilter' to: [/*]
+2019-01-16 09:44:08.464 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2019-01-16 09:44:09.504 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'taskExecutor'
+2019-01-16 09:44:09.507 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'taskExecutorElastic'
+2019-01-16 09:44:09.664 logback [restartedMain] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-16 09:44:09.664 logback [restartedMain] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-16 09:44:09.802 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-16 09:44:10.201 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6de13f09: startup date [Wed Jan 16 09:43:58 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2cb9f6ea
+2019-01-16 09:44:10.295 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/channel],methods=[POST]}" onto public void site.cnkj.es.controller.ElasticSearchController.releaseMessage(java.lang.String)
+2019-01-16 09:44:10.296 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/start],methods=[POST]}" onto public site.cnkj.util.domain.BaseResult site.cnkj.es.controller.ElasticSearchController.startQuery(java.lang.String,java.lang.String)
+2019-01-16 09:44:10.299 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-16 09:44:10.299 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-16 09:44:10.352 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-16 09:44:10.352 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-16 09:44:11.325 logback [restartedMain] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6de13f09: startup date [Wed Jan 16 09:43:58 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2cb9f6ea] and template loader path [classpath:/templates/]
+2019-01-16 09:44:11.326 logback [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-01-16 09:44:11.553 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-01-16 09:44:11.956 logback [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-01-16 09:44:11.974 logback [restartedMain] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-16 09:44:11.976 logback [restartedMain] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-16 09:44:11.977 logback [restartedMain] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-16 09:44:12.052 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-01-16 09:44:12.064 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-16 09:44:12.065 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-16 09:44:12.067 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-16 09:44:12.071 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-16 09:44:12.080 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-16 09:44:12.093 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=6de13f09,type=ConfigurationPropertiesRebinder]
+2019-01-16 09:44:12.106 logback [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-01-16 09:44:12.127 logback [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-01-16 09:44:12.186 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-01-16 09:44:12.274 logback [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-01-16 09:44:12.275 logback [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-01-16 09:44:12.456 logback [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-01-16 09:44:12.456 logback [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-01-16 09:44:12.859 logback [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-16 09:44:13.273 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-01-16 09:44:13.273 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-01-16 09:44:13.273 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-01-16 09:44:13.273 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2019-01-16 09:44:13.274 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-01-16 09:44:13.274 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-01-16 09:44:13.274 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-01-16 09:44:13.832 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2019-01-16 09:44:13.836 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-01-16 09:44:13.841 logback [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-01-16 09:44:13.846 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1547603053844 with initial instances count: 5
+2019-01-16 09:44:13.853 logback [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application elasticsearch with eureka with status UP
+2019-01-16 09:44:13.854 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1547603053854, current=UP, previous=STARTING]
+2019-01-16 09:44:13.858 logback [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483547
+2019-01-16 09:44:13.859 logback [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-01-16 09:44:13.919 logback [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ELASTICSEARCH/localhost:elasticsearch:18083: registering service...
+2019-01-16 09:44:13.984 logback [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ELASTICSEARCH/localhost:elasticsearch:18083 - registration status: 204
+2019-01-16 09:44:14.012 logback [container-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2019-01-16 09:44:14.014 logback [container-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2019-01-16 09:44:15.425 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 18083 (http) with context path ''
+2019-01-16 09:44:15.426 logback [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 18083
+2019-01-16 09:44:15.432 logback [restartedMain] INFO  site.cnkj.es.EsApplicationBoot - Started EsApplicationBoot in 22.022 seconds (JVM running for 24.989)
+2019-01-16 09:44:16.235 logback [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-16 09:44:16.235 logback [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-16 09:44:16.255 logback [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2019-01-16 09:44:22.826 logback [http-nio-18083-exec-9] INFO  s.c.e.s.i.ElasticSearchServiceImpl - {
+  "size" : 10000,
+  "timeout" : "60s",
+  "query" : {
+    "bool" : {
+      "must" : [
+        {
+          "query_string" : {
+            "query" : "/v1.0/music/download_url.do",
+            "fields" : [ ],
+            "use_dis_max" : true,
+            "tie_breaker" : 0.0,
+            "default_operator" : "or",
+            "auto_generate_phrase_queries" : false,
+            "max_determinized_states" : 10000,
+            "enable_position_increments" : true,
+            "fuzziness" : "AUTO",
+            "fuzzy_prefix_length" : 0,
+            "fuzzy_max_expansions" : 50,
+            "phrase_slop" : 0,
+            "escape" : false,
+            "split_on_whitespace" : true,
+            "boost" : 1.0
+          }
+        },
+        {
+          "range" : {
+            "@timestamp" : {
+              "from" : "1547589600000",
+              "to" : "1547596800000",
+              "include_lower" : true,
+              "include_upper" : true,
+              "boost" : 1.0
+            }
+          }
+        }
+      ],
+      "disable_coord" : false,
+      "adjust_pure_negative" : true,
+      "boost" : 1.0
+    }
+  }
+}
+2019-01-16 09:44:23.053 logback [http-nio-18083-exec-9] INFO  s.c.e.s.i.ElasticSearchServiceImpl - A total of [ 0 ] data was retrieved.
+2019-01-16 09:45:35.788 logback [restartedMain] INFO  site.cnkj.es.EsApplicationBoot - The following profiles are active: dev
+2019-01-16 09:45:35.806 logback [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5958e9e: startup date [Wed Jan 16 09:45:35 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@14b688ae
+2019-01-16 09:45:37.432 logback [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-16 09:45:37.457 logback [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-16 09:45:37.991 logback [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=7e528926-97b6-39d4-85c3-6414ea96e531
+2019-01-16 09:45:38.005 logback [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-16 09:45:38.115 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$eed11e24] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-16 09:45:38.197 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$37390f9e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-16 09:45:39.002 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 18083 (http)
+2019-01-16 09:45:39.028 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-01-16 09:45:39.028 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-01-16 09:45:39.033 logback [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Python3.7\Scripts\;D:\Python3.7\;D:\Python2.7\;D:\Python2.7\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;.%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.ja;D:\Lua\5.1;D:\Lua\5.1\clibs;C:\WINDOWS\System32\OpenSSH\;D:\nodejs\;D:\Yarn\bin\;D:\SVN\bin;D:\git\cmd;C:\Users\Carol\AppData\Local\GitHubDesktop\bin;D:\Fiddle\Fiddler;D:\Python2.7\Lib\site-packages\django;D:\Python2.7\Scripts;C:\Users\Carol\AppData\Local\Microsoft\WindowsApps;C:\Users\Carol\AppData\Roaming\npm;"D:\JDK1.7\bin;D:\JDK1.7\jre\bin";D:\apache-maven-3.5.4\bin;C:\Users\Carol\AppData\Local\Yarn\bin;.]
+2019-01-16 09:45:39.303 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-01-16 09:45:39.303 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3497 ms
+2019-01-16 09:45:39.603 logback [localhost-startStop-1] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-16 09:45:39.603 logback [localhost-startStop-1] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-16 09:45:39.614 logback [localhost-startStop-1] INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4968a9d4
+2019-01-16 09:45:41.932 logback [localhost-startStop-1] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-01-16 09:45:43.840 logback [localhost-startStop-1] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-01-16 09:45:44.926 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-16 09:45:44.926 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-01-16 09:45:44.926 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-16 09:45:44.926 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-16 09:45:44.926 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-16 09:45:44.926 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpTraceFilter' to: [/*]
+2019-01-16 09:45:44.926 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2019-01-16 09:45:45.911 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'taskExecutor'
+2019-01-16 09:45:45.914 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'taskExecutorElastic'
+2019-01-16 09:45:46.045 logback [restartedMain] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-01-16 09:45:46.046 logback [restartedMain] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-01-16 09:45:46.175 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-16 09:45:46.570 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5958e9e: startup date [Wed Jan 16 09:45:35 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@14b688ae
+2019-01-16 09:45:46.655 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/start],methods=[POST]}" onto public site.cnkj.util.domain.BaseResult site.cnkj.es.controller.ElasticSearchController.startQuery(java.lang.String,java.lang.String)
+2019-01-16 09:45:46.656 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/channel],methods=[POST]}" onto public void site.cnkj.es.controller.ElasticSearchController.releaseMessage(java.lang.String)
+2019-01-16 09:45:46.658 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-16 09:45:46.659 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-16 09:45:46.721 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-16 09:45:46.721 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-16 09:45:47.606 logback [restartedMain] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5958e9e: startup date [Wed Jan 16 09:45:35 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@14b688ae] and template loader path [classpath:/templates/]
+2019-01-16 09:45:47.607 logback [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-01-16 09:45:47.889 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-01-16 09:45:48.149 logback [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-01-16 09:45:48.167 logback [restartedMain] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-16 09:45:48.169 logback [restartedMain] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-01-16 09:45:48.170 logback [restartedMain] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-16 09:45:48.248 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-01-16 09:45:48.259 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-01-16 09:45:48.260 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-01-16 09:45:48.262 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-01-16 09:45:48.265 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-01-16 09:45:48.274 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-01-16 09:45:48.292 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5958e9e,type=ConfigurationPropertiesRebinder]
+2019-01-16 09:45:48.307 logback [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-01-16 09:45:48.324 logback [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-01-16 09:45:48.375 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-01-16 09:45:48.478 logback [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-01-16 09:45:48.478 logback [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-01-16 09:45:48.681 logback [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-01-16 09:45:48.681 logback [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-01-16 09:45:49.084 logback [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-16 09:45:49.477 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-01-16 09:45:49.477 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-01-16 09:45:49.477 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-01-16 09:45:49.477 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2019-01-16 09:45:49.477 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-01-16 09:45:49.478 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-01-16 09:45:49.478 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-01-16 09:45:49.983 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2019-01-16 09:45:49.987 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-01-16 09:45:49.990 logback [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-01-16 09:45:49.994 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1547603149993 with initial instances count: 6
+2019-01-16 09:45:50.001 logback [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application elasticsearch with eureka with status UP
+2019-01-16 09:45:50.001 logback [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1547603150001, current=UP, previous=STARTING]
+2019-01-16 09:45:50.005 logback [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483547
+2019-01-16 09:45:50.005 logback [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-01-16 09:45:50.009 logback [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ELASTICSEARCH/localhost:elasticsearch:18083: registering service...
+2019-01-16 09:45:50.073 logback [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ELASTICSEARCH/localhost:elasticsearch:18083 - registration status: 204
+2019-01-16 09:45:50.118 logback [container-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2019-01-16 09:45:50.119 logback [container-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2019-01-16 09:45:51.351 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 18083 (http) with context path ''
+2019-01-16 09:45:51.353 logback [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 18083
+2019-01-16 09:45:51.356 logback [restartedMain] INFO  site.cnkj.es.EsApplicationBoot - Started EsApplicationBoot in 20.267 seconds (JVM running for 23.292)
+2019-01-16 09:45:51.906 logback [RMI TCP Connection(6)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-16 09:45:51.907 logback [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-16 09:45:51.937 logback [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2019-01-16 09:45:56.246 logback [http-nio-18083-exec-1] INFO  s.c.e.s.i.ElasticSearchServiceImpl - {
+  "size" : 10000,
+  "timeout" : "60s",
+  "query" : {
+    "bool" : {
+      "must" : [
+        {
+          "match_phrase" : {
+            "uri" : {
+              "query" : "/v1.0/music/download_url.do",
+              "slop" : 0,
+              "boost" : 1.0
+            }
+          }
+        },
+        {
+          "range" : {
+            "@timestamp" : {
+              "from" : "1547589600000",
+              "to" : "1547596800000",
+              "include_lower" : true,
+              "include_upper" : true,
+              "boost" : 1.0
+            }
+          }
+        }
+      ],
+      "disable_coord" : false,
+      "adjust_pure_negative" : true,
+      "boost" : 1.0
+    }
+  }
+}
+2019-01-16 09:46:11.024 logback [Get_Data_From_ES2] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = all
+	batch.size = 89590
+	bootstrap.servers = [10.25.246.47:9091]
+	buffer.memory = 3000000
+	client.id = site.cnkj
+	compression.type = gzip
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 6000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 206407532
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-01-16 09:46:11.159 logback [Get_Data_From_ES2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version : 1.1.1
+2019-01-16 09:46:11.159 logback [Get_Data_From_ES2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId : 98b6346a977495f6
+2019-01-16 09:46:11.288 logback [http-nio-18083-exec-1] INFO  s.c.e.s.i.ElasticSearchServiceImpl - A total of [ 90445 ] data was retrieved, and the number of data processed [ 10000 ] 
+2019-01-16 09:46:11.600 logback [kafka-producer-network-thread | site.cnkj] INFO  org.apache.kafka.clients.Metadata - Cluster ID: Vb-y9lu7RP2ZwsOk4LfUyg
+2019-01-16 09:46:23.721 logback [container-2] INFO  s.c.e.s.i.ElasticSearchServiceImpl - A total of [ 90445 ] data was retrieved, and the number of data processed [ 10000 ] 
+2019-01-16 09:46:35.191 logback [container-2] INFO  s.c.e.s.i.ElasticSearchServiceImpl - A total of [ 90445 ] data was retrieved, and the number of data processed [ 20000 ] 
+2019-01-16 09:46:45.118 logback [container-2] INFO  s.c.e.s.i.ElasticSearchServiceImpl - A total of [ 90445 ] data was retrieved, and the number of data processed [ 30000 ] 
+2019-01-16 09:46:57.818 logback [container-2] INFO  s.c.e.s.i.ElasticSearchServiceImpl - A total of [ 90445 ] data was retrieved, and the number of data processed [ 40000 ] 
+2019-01-16 09:47:06.720 logback [container-2] INFO  s.c.e.s.i.ElasticSearchServiceImpl - A total of [ 90445 ] data was retrieved, and the number of data processed [ 50000 ] 
+2019-01-16 09:47:15.533 logback [container-2] INFO  s.c.e.s.i.ElasticSearchServiceImpl - A total of [ 90445 ] data was retrieved, and the number of data processed [ 60000 ] 
+2019-01-16 09:47:26.623 logback [container-2] INFO  s.c.e.s.i.ElasticSearchServiceImpl - A total of [ 90445 ] data was retrieved, and the number of data processed [ 70000 ] 
+2019-01-16 09:47:38.469 logback [container-2] INFO  s.c.e.s.i.ElasticSearchServiceImpl - A total of [ 90445 ] data was retrieved, and the number of data processed [ 80000 ] 
+2019-01-16 09:47:38.929 logback [container-2] INFO  s.c.e.s.i.ElasticSearchServiceImpl - A total of [ 90445 ] data was retrieved, and the number of data processed [ 80445 ] 
+2019-01-16 09:47:38.980 logback [container-2] INFO  s.c.e.s.i.ElasticSearchServiceImpl - A total of [ 90445 ] data was retrieved, and the number of data processed [ 80445 ] 
+2019-01-16 09:47:46.051 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.io.IOException: listener timeout after waiting for [60000] ms
+	at org.elasticsearch.client.RestClient$SyncResponseListener.get(RestClient.java:660)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:219)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:191)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:170)
+	at org.elasticsearch.client.sniff.ElasticsearchHostsSniffer.sniffHosts(ElasticsearchHostsSniffer.java:93)
+	at org.elasticsearch.client.sniff.Sniffer$Task.sniff(Sniffer.java:113)
+	at org.elasticsearch.client.sniff.Sniffer$Task.run(Sniffer.java:103)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-16 09:48:46.117 logback [pool-4-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.io.IOException: listener timeout after waiting for [60000] ms
+	at org.elasticsearch.client.RestClient$SyncResponseListener.get(RestClient.java:660)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:219)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:191)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:170)
+	at org.elasticsearch.client.sniff.ElasticsearchHostsSniffer.sniffHosts(ElasticsearchHostsSniffer.java:93)
+	at org.elasticsearch.client.sniff.Sniffer$Task.sniff(Sniffer.java:113)
+	at org.elasticsearch.client.sniff.Sniffer$Task.sniffOnFailure(Sniffer.java:107)
+	at org.elasticsearch.client.sniff.Sniffer.sniffOnFailure(Sniffer.java:59)
+	at org.elasticsearch.client.sniff.SniffOnFailureListener.onFailure(SniffOnFailureListener.java:62)
+	at org.elasticsearch.client.RestClient.onFailure(RestClient.java:491)
+	at org.elasticsearch.client.RestClient.access$400(RestClient.java:89)
+	at org.elasticsearch.client.RestClient$1.failed(RestClient.java:374)
+	at org.apache.http.concurrent.BasicFuture.failed(BasicFuture.java:138)
+	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.executionFailed(DefaultClientExchangeHandlerImpl.java:101)
+	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.failed(AbstractClientExchangeHandler.java:426)
+	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.connectionRequestFailed(AbstractClientExchangeHandler.java:348)
+	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.access$100(AbstractClientExchangeHandler.java:62)
+	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler$1.failed(AbstractClientExchangeHandler.java:392)
+	at org.apache.http.concurrent.BasicFuture.failed(BasicFuture.java:138)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$1.failed(PoolingNHttpClientConnectionManager.java:316)
+	at org.apache.http.concurrent.BasicFuture.failed(BasicFuture.java:138)
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-16 09:49:49.120 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.io.IOException: listener timeout after waiting for [60000] ms
+	at org.elasticsearch.client.RestClient$SyncResponseListener.get(RestClient.java:660)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:219)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:191)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:170)
+	at org.elasticsearch.client.sniff.ElasticsearchHostsSniffer.sniffHosts(ElasticsearchHostsSniffer.java:93)
+	at org.elasticsearch.client.sniff.Sniffer$Task.sniff(Sniffer.java:113)
+	at org.elasticsearch.client.sniff.Sniffer$Task.run(Sniffer.java:103)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-16 09:50:49.155 logback [pool-4-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.io.IOException: listener timeout after waiting for [60000] ms
+	at org.elasticsearch.client.RestClient$SyncResponseListener.get(RestClient.java:660)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:219)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:191)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:170)
+	at org.elasticsearch.client.sniff.ElasticsearchHostsSniffer.sniffHosts(ElasticsearchHostsSniffer.java:93)
+	at org.elasticsearch.client.sniff.Sniffer$Task.sniff(Sniffer.java:113)
+	at org.elasticsearch.client.sniff.Sniffer$Task.sniffOnFailure(Sniffer.java:107)
+	at org.elasticsearch.client.sniff.Sniffer.sniffOnFailure(Sniffer.java:59)
+	at org.elasticsearch.client.sniff.SniffOnFailureListener.onFailure(SniffOnFailureListener.java:62)
+	at org.elasticsearch.client.RestClient.onFailure(RestClient.java:491)
+	at org.elasticsearch.client.RestClient.access$400(RestClient.java:89)
+	at org.elasticsearch.client.RestClient$1.failed(RestClient.java:374)
+	at org.apache.http.concurrent.BasicFuture.failed(BasicFuture.java:138)
+	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.executionFailed(DefaultClientExchangeHandlerImpl.java:101)
+	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.failed(AbstractClientExchangeHandler.java:426)
+	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.connectionRequestFailed(AbstractClientExchangeHandler.java:348)
+	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.access$100(AbstractClientExchangeHandler.java:62)
+	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler$1.failed(AbstractClientExchangeHandler.java:392)
+	at org.apache.http.concurrent.BasicFuture.failed(BasicFuture.java:138)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$1.failed(PoolingNHttpClientConnectionManager.java:316)
+	at org.apache.http.concurrent.BasicFuture.failed(BasicFuture.java:138)
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-16 09:50:49.482 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-16 09:51:52.173 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.io.IOException: listener timeout after waiting for [60000] ms
+	at org.elasticsearch.client.RestClient$SyncResponseListener.get(RestClient.java:660)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:219)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:191)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:170)
+	at org.elasticsearch.client.sniff.ElasticsearchHostsSniffer.sniffHosts(ElasticsearchHostsSniffer.java:93)
+	at org.elasticsearch.client.sniff.Sniffer$Task.sniff(Sniffer.java:113)
+	at org.elasticsearch.client.sniff.Sniffer$Task.run(Sniffer.java:103)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-16 09:52:52.206 logback [pool-4-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.io.IOException: listener timeout after waiting for [60000] ms
+	at org.elasticsearch.client.RestClient$SyncResponseListener.get(RestClient.java:660)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:219)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:191)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:170)
+	at org.elasticsearch.client.sniff.ElasticsearchHostsSniffer.sniffHosts(ElasticsearchHostsSniffer.java:93)
+	at org.elasticsearch.client.sniff.Sniffer$Task.sniff(Sniffer.java:113)
+	at org.elasticsearch.client.sniff.Sniffer$Task.sniffOnFailure(Sniffer.java:107)
+	at org.elasticsearch.client.sniff.Sniffer.sniffOnFailure(Sniffer.java:59)
+	at org.elasticsearch.client.sniff.SniffOnFailureListener.onFailure(SniffOnFailureListener.java:62)
+	at org.elasticsearch.client.RestClient.onFailure(RestClient.java:491)
+	at org.elasticsearch.client.RestClient.access$400(RestClient.java:89)
+	at org.elasticsearch.client.RestClient$1.failed(RestClient.java:374)
+	at org.apache.http.concurrent.BasicFuture.failed(BasicFuture.java:138)
+	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.executionFailed(DefaultClientExchangeHandlerImpl.java:101)
+	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.failed(AbstractClientExchangeHandler.java:426)
+	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.connectionRequestFailed(AbstractClientExchangeHandler.java:348)
+	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler.access$100(AbstractClientExchangeHandler.java:62)
+	at org.apache.http.impl.nio.client.AbstractClientExchangeHandler$1.failed(AbstractClientExchangeHandler.java:392)
+	at org.apache.http.concurrent.BasicFuture.failed(BasicFuture.java:138)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager$1.failed(PoolingNHttpClientConnectionManager.java:316)
+	at org.apache.http.concurrent.BasicFuture.failed(BasicFuture.java:138)
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-16 09:53:40.243 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.net.ConnectException: Timeout connecting to [/10.25.151.238:9200]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.239:9200]
+		... 10 common frames omitted
+		Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.188:9200]
+			... 10 common frames omitted
+			Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.190:9200]
+				... 10 common frames omitted
+				Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.241:9200]
+					... 10 common frames omitted
+					Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.62:9200]
+						... 10 common frames omitted
+						Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.61:9200]
+							... 10 common frames omitted
+							Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.240:9200]
+								... 10 common frames omitted
+								Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.65:9200]
+									... 10 common frames omitted
+2019-01-16 09:55:25.276 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.net.ConnectException: Timeout connecting to [/10.25.151.63:9200]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.191:9200]
+		... 10 common frames omitted
+		Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.242:9200]
+			... 10 common frames omitted
+			Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.189:9200]
+				... 10 common frames omitted
+				Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.66:9200]
+					... 10 common frames omitted
+					Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.186:9200]
+						... 10 common frames omitted
+						Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.187:9200]
+							... 10 common frames omitted
+							Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.61:9200]
+								... 10 common frames omitted
+								Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.64:9200]
+									... 10 common frames omitted
+2019-01-16 09:55:49.483 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-16 09:57:05.308 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.net.ConnectException: Timeout connecting to [/10.25.151.62:9200]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.240:9200]
+		... 10 common frames omitted
+		Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.65:9200]
+			... 10 common frames omitted
+			Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.238:9200]
+				... 10 common frames omitted
+				Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.239:9200]
+					... 10 common frames omitted
+					Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.188:9200]
+						... 10 common frames omitted
+						Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.190:9200]
+							... 10 common frames omitted
+							Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.241:9200]
+								... 10 common frames omitted
+2019-01-16 09:58:40.332 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.net.ConnectException: Timeout connecting to [/10.25.151.186:9200]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.187:9200]
+		... 10 common frames omitted
+		Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.61:9200]
+			... 10 common frames omitted
+			Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.64:9200]
+				... 10 common frames omitted
+				Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.242:9200]
+					... 10 common frames omitted
+					Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.189:9200]
+						... 10 common frames omitted
+						Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.66:9200]
+							... 10 common frames omitted
+2019-01-16 10:00:15.363 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.net.ConnectException: Timeout connecting to [/10.25.151.190:9200]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.241:9200]
+		... 10 common frames omitted
+		Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.63:9200]
+			... 10 common frames omitted
+			Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.191:9200]
+				... 10 common frames omitted
+				Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.238:9200]
+					... 10 common frames omitted
+					Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.239:9200]
+						... 10 common frames omitted
+						Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.188:9200]
+							... 10 common frames omitted
+2019-01-16 10:00:49.485 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-16 10:01:30.376 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.net.ConnectException: Timeout connecting to [/10.25.151.240:9200]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.65:9200]
+		... 10 common frames omitted
+		Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.62:9200]
+			... 10 common frames omitted
+2019-01-16 10:03:05.409 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.net.ConnectException: Timeout connecting to [/10.25.151.242:9200]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.189:9200]
+		... 10 common frames omitted
+		Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.66:9200]
+			... 10 common frames omitted
+			Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.186:9200]
+				... 10 common frames omitted
+				Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.187:9200]
+					... 10 common frames omitted
+					Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.61:9200]
+						... 10 common frames omitted
+						Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.64:9200]
+							... 10 common frames omitted
+2019-01-16 10:04:30.430 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.net.ConnectException: Timeout connecting to [/10.25.151.239:9200]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.188:9200]
+		... 10 common frames omitted
+		Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.63:9200]
+			... 10 common frames omitted
+			Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.191:9200]
+				... 10 common frames omitted
+				Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.238:9200]
+					... 10 common frames omitted
+2019-01-16 10:05:49.487 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-16 10:05:55.456 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.net.ConnectException: Timeout connecting to [/10.25.151.240:9200]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.65:9200]
+		... 10 common frames omitted
+		Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.190:9200]
+			... 10 common frames omitted
+			Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.241:9200]
+				... 10 common frames omitted
+				Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.62:9200]
+					... 10 common frames omitted
+2019-01-16 10:07:10.474 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.net.ConnectException: Timeout connecting to [/10.25.151.61:9200]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.186:9200]
+		... 10 common frames omitted
+		Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.187:9200]
+			... 10 common frames omitted
+2019-01-16 10:08:15.481 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.net.ConnectException: Timeout connecting to [/10.25.151.64:9200]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-16 10:09:30.497 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.net.ConnectException: Timeout connecting to [/10.25.151.189:9200]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.66:9200]
+		... 10 common frames omitted
+		Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.242:9200]
+			... 10 common frames omitted
+2019-01-16 10:10:49.494 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-16 10:10:55.524 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.net.ConnectException: Timeout connecting to [/10.25.151.188:9200]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.63:9200]
+		... 10 common frames omitted
+		Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.191:9200]
+			... 10 common frames omitted
+			Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.238:9200]
+				... 10 common frames omitted
+				Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.239:9200]
+					... 10 common frames omitted
+2019-01-16 10:12:20.544 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.net.ConnectException: Timeout connecting to [/10.25.151.65:9200]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.190:9200]
+		... 10 common frames omitted
+		Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.241:9200]
+			... 10 common frames omitted
+			Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.62:9200]
+				... 10 common frames omitted
+				Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.240:9200]
+					... 10 common frames omitted
+2019-01-16 10:13:35.556 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.net.ConnectException: Timeout connecting to [/10.25.151.187:9200]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.61:9200]
+		... 10 common frames omitted
+		Suppressed: java.net.ConnectException: Timeout connecting to [/10.25.151.186:9200]
+			... 10 common frames omitted
+2019-01-16 10:14:40.563 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.net.ConnectException: Timeout connecting to [/10.25.151.64:9200]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-16 10:15:45.571 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.net.ConnectException: Timeout connecting to [/10.25.151.242:9200]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-16 10:15:49.497 logback [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-01-16 10:16:50.577 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.net.ConnectException: Timeout connecting to [/10.25.151.66:9200]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-16 10:17:55.583 logback [pool-5-thread-1] ERROR o.elasticsearch.client.sniff.Sniffer - error while sniffing nodes
+java.net.ConnectException: Timeout connecting to [/10.25.151.189:9200]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:174)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:629)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:899)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:183)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:210)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:155)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)

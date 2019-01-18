@@ -21,7 +21,7 @@ public class DiscoveryClientUtil {
      *
      * @return ip
      */
-    private static String getLocalIP() {
+    public static String getLocalIP() {
         InetAddress addr = null;
         try {
             addr = InetAddress.getLocalHost();
@@ -37,7 +37,7 @@ public class DiscoveryClientUtil {
      *
      * @return hostName
      */
-    private static String getLocalHostName() {
+    public static String getLocalHostName() {
         InetAddress addr = null;
         try {
             addr = InetAddress.getLocalHost();

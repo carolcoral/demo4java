@@ -25,6 +25,7 @@ public class SubDescriptionImpl implements SubDescription {
         if (flag == true){
             code = elasticSearchService.queryDataToKafkaById(message);
         }
+        System.out.println("*******code*****"+code);
         return code;
     }
 

@@ -9,9 +9,11 @@
         <module name="common" />
         <module name="ElasticSearch" />
         <module name="eureka" />
+        <module name="Kafka" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ElasticSearch2" target="1.8" />
       <module name="ElasticSearchtest" target="1.8" />
     </bytecodeTargetLevel>
   </component>

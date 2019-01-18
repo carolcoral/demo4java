@@ -11,8 +11,10 @@
 
     <modules>
         <module>ElasticSearch</module>
+        <module>ElasticSearch2</module>
         <module>common</module>
         <module>eureka</module>
+        <module>Kafka</module>
     </modules>
 
     <parent>

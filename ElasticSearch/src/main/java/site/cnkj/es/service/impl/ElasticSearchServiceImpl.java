@@ -17,12 +17,12 @@ import site.cnkj.es.config.ElasticConfig;
 import site.cnkj.es.service.AsyncElasticsearchService;
 import site.cnkj.es.service.ElasticSearchService;
 import site.cnkj.util.CommonConstant;
+import site.cnkj.util.DiscoveryClientUtil;
 import site.cnkj.util.RedisUtil;
 
 import javax.annotation.Resource;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
@@ -67,15 +67,15 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
             //Aggregate statement
             //重要,聚合查询语句
             searchSourceBuilder.query(QueryBuilders.boolQuery()
-                    //.must(QueryBuilders.matchPhraseQuery(filterKey,filterValue))
-                    .must(QueryBuilders.queryStringQuery(filterValue))
+                    .must(QueryBuilders.matchPhraseQuery(filterKey,filterValue))
+                    //.must(QueryBuilders.queryStringQuery(filterValue))
                     .must(QueryBuilders.rangeQuery("@timestamp").gte(startTime).lte(endTime))
             )
                     .timeout(new TimeValue(elasticSearchTimeout,TimeUnit.SECONDS))
                     .size(elasticSearchSize);
-            searchRequest.source(searchSourceBuilder);
+            searchRequest.source(searchSourceBuilder).preference(DiscoveryClientUtil.getLocalHostName());
             //Print the executed DSL statement, which can be used directly in Kibana
-            //LOGGER.info(searchSourceBuilder.toString());
+            LOGGER.info(searchSourceBuilder.toString());
             SearchResponse searchResponse = client.search(searchRequest);
             if (searchResponse.getHits().totalHits == 0){
                 String info2 = "A total of [ 0 ] data was retrieved.";
@@ -85,8 +85,9 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
                 if ("OK".equals(searchResponse.status().toString())){
                     //非常值得深入研究下的分页标识，可以扩展成无缝扩容、无缝降压
                     String scrollId = searchResponse.getScrollId();
+                    System.out.println("***********scrollId*************\n"+scrollId);
                     //将获取到的scrollId保存到redis以便其他扩展服务使用
-                    redisUtil.releaseMessage(CommonConstant.REDIS.ESScrollId, scrollId, false);
+                    redisUtil.releaseMessage(CommonConstant.REDIS.ESScrollId, scrollId, true);
                     SearchHit[] searchHits = searchResponse.getHits().getHits();
                     //当执行分页查询的时候第一次查询的数据将不再重复查询，所以为了数据完整性，第一次查询需要单独处理
                     for (SearchHit hit : searchResponse.getHits().getHits()) {
@@ -111,27 +112,38 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
         }
     }
 
+    /**
+     * 通过订阅的方式使用scrollId进行分布式横向扩容查询会出现严重的数据丢失问题，不推荐使用
+     * @param scrollId
+     * @return
+     */
     @Override
     public boolean queryDataToKafkaById(String scrollId) {
-        boolean flag = false;
+        boolean flag = true;
         try {
             List<CompletableFuture<Boolean>> completableFutureList = new ArrayList<CompletableFuture<Boolean>>();
             SearchResponse searchResponse = null;
             long totalHits = 0;
             long length = 0;
+
+            //设置当前服务的采集状态
+            redisUtil.hset("ScrollId_Code", DiscoveryClientUtil.getLocalIP(), "false");
+            //等待随机毫秒（3位），避免重复数据的插入
+            Thread.sleep((long) Math.ceil(Math.random()*1000));
             while(true){
                 SearchScrollRequest scrollRequest = new SearchScrollRequest(scrollId);
                 scrollRequest.scroll(scroll);
                 searchResponse = client.searchScroll(scrollRequest);
+                if (searchResponse.getHits().getHits().length == 0){
+                    LOGGER.info("当前查询结果为空或已完成全部查询");
+                    break;
+                }
                 totalHits = searchResponse.getHits().getTotalHits();
                 CompletableFuture<Boolean> batchSearchElasticData = asyncElasticsearchService.batchSearchElasticData(searchResponse, TOPIC_NAME);
                 completableFutureList.add(batchSearchElasticData);
                 length += searchResponse.getHits().getHits().length;
                 String info3 = "A total of [ " + totalHits + " ] data was retrieved, and the number of data processed [ " + length + " ] ";
                 LOGGER.info(info3);
-                if (searchResponse == null || searchResponse.getHits().getHits().length == 0 || searchResponse.getHits().getHits() == null){
-                    break;
-                }
             }
             CompletableFuture.allOf(completableFutureList.toArray(new CompletableFuture[completableFutureList.size()])).join();
             for (CompletableFuture<Boolean> cp :completableFutureList){
@@ -143,13 +155,29 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
                     e.printStackTrace();
                 }
             }
-            ClearScrollRequest clearScrollRequest = new ClearScrollRequest();
-            clearScrollRequest.addScrollId(scrollId);
-            ClearScrollResponse clearScrollResponse = client.clearScroll(clearScrollRequest);
-            flag = clearScrollResponse.isSucceeded();
+            redisUtil.hset("ScrollId_Code", DiscoveryClientUtil.getLocalIP(), "true");
+            Map keyMaps = redisUtil.hmget("ScrollId_Code");
+            Set set = new HashSet();
+            for (Object key : keyMaps.keySet()){
+                Object value = keyMaps.get(key);
+                set.add(value);
+            }
+            boolean b = false;
+            for (Object o : set) {
+                if ("true".equals(o)){
+                    b = Boolean.valueOf(o.toString());
+                }
+            }
+            if (b){
+                ClearScrollRequest clearScrollRequest = new ClearScrollRequest();
+                clearScrollRequest.addScrollId(scrollId);
+                ClearScrollResponse clearScrollResponse = client.clearScroll(clearScrollRequest);
+                flag = clearScrollResponse.isSucceeded();
+            }
         } catch (IOException e) {
             e.printStackTrace();
             flag = false;
+            redisUtil.hset("ScrollId_Code", DiscoveryClientUtil.getLocalIP(), "true");
         } finally {
             return flag;
         }

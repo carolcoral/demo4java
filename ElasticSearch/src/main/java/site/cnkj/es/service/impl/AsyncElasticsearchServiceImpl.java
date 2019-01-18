@@ -23,9 +23,6 @@ public class AsyncElasticsearchServiceImpl implements AsyncElasticsearchService 
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AsyncElasticsearchServiceImpl.class);
 
-    @Autowired
-    private KafkaTemplate kafkaTemplate;
-
     @Async("taskExecutor")
     @Override
     public CompletableFuture batchSearchElasticData(SearchResponse searchResponse, String topicName) {
@@ -65,8 +62,10 @@ public class AsyncElasticsearchServiceImpl implements AsyncElasticsearchService 
     @Override
     public CompletableFuture batchSendElasticDataToKafka(SearchHit searchHit, String topicName) {
         try {
+            //获取es查询到的每行数据
             String res = searchHit.getSourceAsString();
-            ListenableFuture re = kafkaTemplate.send(topicName, res);
+            // TODO 你想要做的事情
+            //返回当前任务状态
             return CompletableFuture.completedFuture(true);
         } catch (Exception e) {
             e.printStackTrace();
