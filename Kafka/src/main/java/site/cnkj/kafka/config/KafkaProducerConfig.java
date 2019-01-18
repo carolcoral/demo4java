@@ -1,4 +1,4 @@
-package site.cnkj.util.config;
+package site.cnkj.kafka.config;
 
 import lombok.Data;
 import org.apache.kafka.clients.admin.AdminClientConfig;

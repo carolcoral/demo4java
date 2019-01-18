@@ -4,11 +4,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableAsync;
+import site.cnkj.kafka.config.KafkaProducerConfig;
 
 /*
  * @version 1.0 created by LXW on 2019/1/16 14:44
  */
-@ComponentScan(basePackages = "site.cnkj.kafka.*",basePackageClasses = {})
+@ComponentScan(basePackages = "site.cnkj.kafka.*",basePackageClasses = {
+})
 @EnableAsync
 @SpringBootApplication
 public class KafkaApplicationBoot {
