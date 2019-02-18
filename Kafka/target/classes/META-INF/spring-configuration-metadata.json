@@ -1,0 +1,11 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "site.cnkj.kafka.config.KafkaListenerConfig",
+      "name": "",
+      "type": "site.cnkj.kafka.config.KafkaListenerConfig"
+    }
+  ],
+  "properties": []
+}

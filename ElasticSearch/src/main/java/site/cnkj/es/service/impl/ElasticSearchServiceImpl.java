@@ -73,7 +73,8 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
             )
                     .timeout(new TimeValue(elasticSearchTimeout,TimeUnit.SECONDS))
                     .size(elasticSearchSize);
-            searchRequest.source(searchSourceBuilder).preference(DiscoveryClientUtil.getLocalHostName());
+            //路由查询结果到同一个分片上
+            searchRequest.source(searchSourceBuilder).routing(DiscoveryClientUtil.getLocalIP());
             //Print the executed DSL statement, which can be used directly in Kibana
             LOGGER.info(searchSourceBuilder.toString());
             SearchResponse searchResponse = client.search(searchRequest);

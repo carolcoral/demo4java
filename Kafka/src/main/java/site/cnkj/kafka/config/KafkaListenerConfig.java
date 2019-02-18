@@ -1,14 +1,17 @@
 package site.cnkj.kafka.config;
 
 import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
 import org.springframework.core.PriorityOrdered;
 import site.cnkj.kafka.service.Listener;
+import site.cnkj.util.FileOperationUtil;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -17,7 +20,6 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
-
 
 @Configuration
 public class KafkaListenerConfig implements BeanDefinitionRegistryPostProcessor , PriorityOrdered {
@@ -30,7 +32,8 @@ public class KafkaListenerConfig implements BeanDefinitionRegistryPostProcessor 
         File f;
         String osVersion = System.getProperty("os.name").toUpperCase();
         if (osVersion.contains("WINDOWS")) {
-            f =new File(this.getClass().getResource("/template.properties").getPath());
+            //f =new File(this.getClass().getResource("/template.properties").getPath());
+            f = FileOperationUtil.getPropertiesFileForWin();
         }else {
             f = new File(Paths.get(System.getProperty("user.dir"), "config", "template.properties").toString());
         }

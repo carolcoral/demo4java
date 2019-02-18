@@ -16,9 +16,9 @@ public interface KafkaService {
      * @param data 数据
      * @return
      */
-    ListenableFuture producerMsg(String topicName, String data);
+    public ListenableFuture producerMsg(String topicName, String data);
 
 
-    void listenerMsg(List<ConsumerRecord<String, Object>> messageList);
+    public void listenerMsg(List<ConsumerRecord<String, Object>> messageList);
 
 }

@@ -10,6 +10,7 @@
         <module name="ElasticSearch" />
         <module name="eureka" />
         <module name="Kafka" />
+        <module name="Spark" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
