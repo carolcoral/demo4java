@@ -999,4 +999,46 @@ public class RedisUtil{
         return null;
     }
 
+    public long remove(String redisName, String key, long count, String value){
+        if (!StringUtils.isEmpty(redisName)){
+            key = redisName + ":" + key;
+        }
+        return redisTemplate.opsForList().remove(key, count, value);
+    }
+
+    /**
+     * 删除列表中指定的value
+     * @param key
+     * @param count 正数表示从做开始查询，删除查询到的第一个；负数表示从右开始查询，删除查询到的第一个；0表示删除符合条件的全部内容
+     * @param value 指定的值
+     * @return
+     */
+    public long remove(String key, long count, String value){
+        if (!StringUtils.isEmpty(redisName)){
+            key = redisName + ":" + key;
+        }
+        return redisTemplate.opsForList().remove(key, count, value);
+    }
+
+    public List range(String redisName, String key, long start, long end){
+        if (!StringUtils.isEmpty(redisName)){
+            key = redisName + ":" + key;
+        }
+        return redisTemplate.opsForList().range(key, start, end);
+    }
+
+    /**
+     * 查询指定范围内的list内容,当开始下标和结束下标为 (0,-1) 表示查询全部
+     * @param key
+     * @param start 开始下标
+     * @param end 结束下标
+     * @return
+     */
+    public List range(String key, long start, long end){
+        if (!StringUtils.isEmpty(redisName)){
+            key = redisName + ":" + key;
+        }
+        return redisTemplate.opsForList().range(key, start, end);
+    }
+
 }
