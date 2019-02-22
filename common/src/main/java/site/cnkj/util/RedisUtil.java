@@ -776,7 +776,7 @@ public class RedisUtil{
      * @param channel 通道名
      * @param message 信息
      */
-    public void releaseMessage(String channel, String message, boolean needServiceName){
+    public void publishMessage(String channel, String message, boolean needServiceName){
         try {
             String channelName = new String();
             if (needServiceName){
@@ -788,6 +788,215 @@ public class RedisUtil{
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+
+    //-----------------------------redis消息队列------------------------------
+
+    /**
+     * 从头部放入一个列表元素
+     * @param key
+     * @param value
+     * @return
+     */
+    public long leftPushAll(String key, List value){
+        try {
+            String keyName = "";
+            if (StringUtils.isEmpty(redisName)){
+                keyName = key;
+            }else {
+                keyName = redisName + ":" + key;
+            }
+            long res = redisTemplate.opsForList().leftPushAll(keyName, value);
+            return res;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
+
+    /**
+     * 从头部放入元素
+     * @param key
+     * @param value
+     * @return
+     */
+    public long leftPush(String key, String value){
+        try {
+            String keyName = "";
+            if (StringUtils.isEmpty(redisName)){
+                keyName = key;
+            }else {
+                keyName = redisName + ":" + key;
+            }
+            long res = redisTemplate.opsForList().leftPush(keyName, value);
+            return res;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
+
+    /**
+     * 从头部放入元素到指定的前缀名中
+     * @param redisName
+     * @param key
+     * @param value
+     * @return
+     */
+    public long leftPush(String redisName, String key, String value){
+        try {
+            String keyName = "";
+            long res = 0;
+            if (StringUtils.isEmpty(redisName)){
+                res = leftPush(key, value);
+            }else {
+                keyName = redisName + ":" + key;
+                res = redisTemplate.opsForList().leftPush(keyName, value);
+            }
+            return res;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
+
+    /**
+     * 从头部取出元素
+     * @param key
+     * @return
+     */
+    public Object leftPop(String key){
+        try {
+            String keyName = new String();
+            if (StringUtils.isEmpty(redisName)){
+                keyName = key;
+            }else {
+                keyName = redisName + ":" + key;
+            }
+            if (redisTemplate.hasKey(keyName)){
+                Object res = redisTemplate.opsForList().leftPop(keyName, 0, TimeUnit.MILLISECONDS);
+                return res;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    /**
+     * 从头部取出元素，阻塞式
+     * @param key
+     * @param timeOut 阻塞时间
+     * @param timeUnit 时间单位
+     * @return
+     */
+    public Object leftPop(String key, long timeOut, TimeUnit timeUnit){
+        try {
+            String keyName = new String();
+            if (StringUtils.isEmpty(redisName)){
+                keyName = key;
+            }else {
+                keyName = redisName + ":" + key;
+            }
+            if (redisTemplate.hasKey(keyName)){
+                Object res = redisTemplate.opsForList().leftPop(keyName, timeOut, timeUnit);
+                return res;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    /**
+     * 从指定key中的头部取出元素
+     * @param redisName
+     * @param key
+     * @return
+     */
+    public Object leftPop(String redisName, String key){
+        try {
+            String keyName = new String();
+            Object res = null;
+            if (StringUtils.isEmpty(redisName)){
+                res = leftPop(key);
+            }else {
+                keyName = redisName + ":" + key;
+                if (redisTemplate.hasKey(keyName)){
+                    res = redisTemplate.opsForList().leftPop(keyName);
+                }
+            }
+            return res;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    /**
+     * 从尾部取出元素
+     * @param key
+     * @return
+     */
+    public Object rightPop(String key){
+        try {
+            String keyName = new String();
+            if (StringUtils.isEmpty(redisName)){
+                keyName = key;
+            }else {
+                keyName = redisName + ":" + key;
+            }
+            if (redisTemplate.hasKey(keyName)){
+                Object res = redisTemplate.opsForList().rightPop(keyName);
+                return res;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    /**
+     * 从尾部取出元素并放入到另一个队列中
+     * @param sourceKey 取出元素的队列名
+     * @param destinationKey 放入元素的队列名
+     * @return
+     */
+    public Object rightPopAndLeftPush(String sourceKey, String destinationKey){
+        try {
+            if (!StringUtils.isEmpty(redisName)){
+                sourceKey = redisName + ":" + sourceKey;
+                destinationKey = redisName + ":" + destinationKey;
+            }
+            Object res = redisTemplate.opsForList().rightPopAndLeftPush(sourceKey, destinationKey);
+            return res;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    /**
+     * 从尾部取出元素并放入另一个队列中，阻塞式
+     * @param sourceKey 取出元素的队列
+     * @param destinationKey 放入元素的队列
+     * @param timeout 阻塞时间
+     * @param unit 时间单位
+     * @return
+     */
+    public Object rightPopAndLeftPush(String sourceKey, String destinationKey, long timeout, TimeUnit unit){
+        try {
+            if (!StringUtils.isEmpty(redisName)){
+                sourceKey = redisName + ":" + sourceKey;
+                destinationKey = redisName + ":" + destinationKey;
+            }
+            Object res = redisTemplate.opsForList().rightPopAndLeftPush(sourceKey, destinationKey, timeout, unit);
+            return res;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
 }

@@ -2,12 +2,106 @@
   "hints": [],
   "groups": [
     {
+      "sourceType": "site.cnkj.es.config.FiltersConfig",
+      "name": "collection",
+      "type": "site.cnkj.es.config.FiltersConfig"
+    },
+    {
       "sourceType": "site.cnkj.es.config.ElasticConfig",
       "name": "common.elasticsearch",
       "type": "site.cnkj.es.config.ElasticConfig"
     }
   ],
   "properties": [
+    {
+      "sourceType": "site.cnkj.es.config.FiltersConfig",
+      "name": "collection.a-10000-00048-",
+      "description": "00048",
+      "type": "java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.String>>"
+    },
+    {
+      "sourceType": "site.cnkj.es.config.FiltersConfig",
+      "name": "collection.a-10000-00050-",
+      "description": "00050",
+      "type": "java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.String>>"
+    },
+    {
+      "sourceType": "site.cnkj.es.config.FiltersConfig",
+      "name": "collection.a-10000-00051-",
+      "description": "00051",
+      "type": "java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.String>>"
+    },
+    {
+      "sourceType": "site.cnkj.es.config.FiltersConfig",
+      "name": "collection.a-10000-00052-",
+      "description": "00052",
+      "type": "java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.String>>"
+    },
+    {
+      "sourceType": "site.cnkj.es.config.FiltersConfig",
+      "name": "collection.a-10000-00053-",
+      "description": "00053",
+      "type": "java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.String>>"
+    },
+    {
+      "sourceType": "site.cnkj.es.config.FiltersConfig",
+      "name": "collection.a-10000-00054-",
+      "description": "00054",
+      "type": "java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.String>>"
+    },
+    {
+      "sourceType": "site.cnkj.es.config.FiltersConfig",
+      "name": "collection.a-10000-00057-",
+      "description": "00057",
+      "type": "java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.String>>"
+    },
+    {
+      "sourceType": "site.cnkj.es.config.FiltersConfig",
+      "name": "collection.a-10000-00058-",
+      "description": "00058",
+      "type": "java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.String>>"
+    },
+    {
+      "sourceType": "site.cnkj.es.config.FiltersConfig",
+      "name": "collection.a-10000-00059-",
+      "description": "00059",
+      "type": "java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.String>>"
+    },
+    {
+      "sourceType": "site.cnkj.es.config.FiltersConfig",
+      "name": "collection.a-10000-00060-",
+      "description": "00060",
+      "type": "java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.String>>"
+    },
+    {
+      "sourceType": "site.cnkj.es.config.FiltersConfig",
+      "name": "collection.a-10000-00101-",
+      "description": "00101",
+      "type": "java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.String>>"
+    },
+    {
+      "sourceType": "site.cnkj.es.config.FiltersConfig",
+      "name": "collection.a-10000-00108-",
+      "description": "00108",
+      "type": "java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.String>>"
+    },
+    {
+      "sourceType": "site.cnkj.es.config.FiltersConfig",
+      "name": "collection.a-10000-00109-",
+      "description": "00109",
+      "type": "java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.String>>"
+    },
+    {
+      "sourceType": "site.cnkj.es.config.FiltersConfig",
+      "name": "collection.a-10000-00110-",
+      "description": "00110",
+      "type": "java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.String>>"
+    },
+    {
+      "sourceType": "site.cnkj.es.config.FiltersConfig",
+      "name": "collection.file-name",
+      "type": "java.util.Map"
+    },
     {
       "sourceType": "site.cnkj.es.config.ElasticConfig",
       "name": "common.elasticsearch.size",

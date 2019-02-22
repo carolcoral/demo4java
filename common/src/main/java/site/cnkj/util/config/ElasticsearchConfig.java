@@ -47,6 +47,7 @@ public class ElasticsearchConfig {
     private Integer maxretrytimeout = 30000; //带超时时间式(毫秒级)
     private Integer failuredelay = 3000;
     private Integer connectTimeout = 5000;
+    private Integer connectRequestTimeout = 6000;
     private Integer socketTimeout = 60000;
     private Integer maxRetryTimeoutMillis = 60000;
 
@@ -125,7 +126,12 @@ public class ElasticsearchConfig {
             public HttpAsyncClientBuilder customizeHttpClient(HttpAsyncClientBuilder httpAsyncClientBuilder) {
                 return httpAsyncClientBuilder.setDefaultCredentialsProvider(credentialsProvider);
             }
-        }).build();
+        }).setRequestConfigCallback((RequestConfig.Builder build)->{
+            build.setConnectTimeout(connectTimeout);
+            build.setConnectionRequestTimeout(connectRequestTimeout);
+            build.setSocketTimeout(socketTimeout);
+            return build;
+        }).setMaxRetryTimeoutMillis(600 * connectTimeout).build();
         //High Level Client init
         RestHighLevelClient client = new RestHighLevelClient(lowLevelRestClient);
         return client;

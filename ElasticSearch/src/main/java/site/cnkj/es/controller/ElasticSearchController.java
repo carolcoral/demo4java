@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import site.cnkj.es.service.ElasticSearchService;
+import site.cnkj.es.service.TestDemo;
 import site.cnkj.util.CommonConstant;
 import site.cnkj.util.RedisUtil;
 import site.cnkj.util.domain.BaseResult;
@@ -21,6 +22,9 @@ public class ElasticSearchController {
     @Autowired
     private ElasticSearchService elasticSearchService;
 
+    @Autowired
+    private TestDemo testDemo;
+
     @RequestMapping(value = "/start",method = RequestMethod.POST)
     public BaseResult startQuery(String startTime, String endTime){
         BaseResult baseResult = new BaseResult();
@@ -36,8 +40,13 @@ public class ElasticSearchController {
     @RequestMapping(value = "/channel",method = RequestMethod.POST)
     public void releaseMessage(String message){
         System.out.println("******message*******"+message);
-        redisUtil.releaseMessage("scrollId", message, true);
+        redisUtil.publishMessage("scrollId", message, true);
         //redisUtil.releaseMessage("test", message, false);
+    }
+
+    @RequestMapping(value = "/test",method = RequestMethod.POST)
+    public void testEs(String startTime, String endTime){
+        testDemo.start51(startTime, endTime);
     }
 
 }

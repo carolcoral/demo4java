@@ -173,8 +173,9 @@ public class FileOperationUtil {
     public static void main(String[] args){
         //System.out.println(getPropertiesByName("application.properties"));
         //H:\github\demo4java\common\target\classes\application.properties
-        File file = new File("H:\\github\\demo4java\\common\\target\\classes\\application.properties");
-        System.out.println(file.getParentFile());
+        //File file = new File("H:\\github\\demo4java\\common\\target\\classes\\application.properties");
+        //System.out.println(file.getParentFile());
+        System.out.println(System.nanoTime());
     }
 
 }

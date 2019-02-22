@@ -33,7 +33,6 @@ public class KafkaBatchMessageListenerServiceImpl<K,V> implements KafkaBatchMess
 
     @Override
     public void onMessage(List<ConsumerRecord<K, V>> data, Consumer<?, ?> consumer) {
-
     }
 
     /**

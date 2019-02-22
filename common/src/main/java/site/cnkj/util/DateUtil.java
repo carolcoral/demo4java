@@ -185,10 +185,14 @@ public class DateUtil {
 
     /**
      * 获取当前系统时间的时间戳
-     *
-     * @return 时间戳
+     * @param nano 时间戳长度表示不同级别的时间
+     * @return
      */
-    public static Long getCurrentTime() {
+    public static Long getCurrentTime(int... nano) {
+        int type = nano.length == 0?13:nano[0];
+        if (type == 14){
+            return System.nanoTime();
+        }
         return System.currentTimeMillis();
     }
 
