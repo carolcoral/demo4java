@@ -2,51 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c030d05-e9d2-4f86-8ff6-009294cdda45" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/ElasticSearch/src/main/java/site/cnkj/es/config/CollectionConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticSearch/src/main/java/site/cnkj/es/config/FiltersConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticSearch/src/main/java/site/cnkj/es/service/AsyncExecutionSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticSearch/src/main/java/site/cnkj/es/service/TestDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElasticSearch/src/main/resources/collection.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch/logs/logback.2019-01-15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch/logs/logback.2019-01-16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch/logs/logback.2019-01-18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch/logs/logback.2019-02-15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch/src/main/java/site/cnkj/es/controller/ElasticSearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch/src/main/java/site/cnkj/es/controller/ElasticSearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch/src/main/java/site/cnkj/es/service/ElasticSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch/src/main/java/site/cnkj/es/service/ElasticSearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch/src/main/java/site/cnkj/es/service/impl/ElasticSearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch/src/main/java/site/cnkj/es/service/impl/ElasticSearchServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElasticSearch/logs/logback.2019-02-22.log" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch/logs/logback.2019-02-22.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ElasticSearch/target/classes/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch/target/classes/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch/target/classes/application-pro.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch/target/classes/site/cnkj/es/controller/ElasticSearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch/target/classes/site/cnkj/es/controller/ElasticSearchController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch/target/classes/site/cnkj/es/service/ElasticSearchService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch/target/classes/site/cnkj/es/service/ElasticSearchService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticSearch/target/classes/site/cnkj/es/service/impl/ElasticSearchServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticSearch/target/classes/site/cnkj/es/service/impl/ElasticSearchServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kafka/src/main/java/site/cnkj/kafka/service/impl/KafkaBatchMessageListenerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kafka/src/main/java/site/cnkj/kafka/service/impl/KafkaBatchMessageListenerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kafka/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kafka/target/classes/application-dev.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kafka/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kafka/target/classes/logback-spring-dev.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kafka/target/classes/site/cnkj/kafka/KafkaApplicationBoot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kafka/target/classes/site/cnkj/kafka/config/KafkaConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kafka/target/classes/site/cnkj/kafka/config/KafkaProducerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kafka/target/classes/site/cnkj/kafka/service/KafkaBatchMessageListenerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kafka/target/classes/site/cnkj/kafka/service/KafkaService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kafka/target/classes/site/cnkj/kafka/service/Listener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kafka/target/classes/site/cnkj/kafka/service/impl/KafkaBatchMessageListenerServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kafka/target/classes/site/cnkj/kafka/service/impl/KafkaServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kafka/target/test-classes/site/cnkj/kafka/KafkaApplicationBootTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/site/cnkj/util/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/site/cnkj/util/DateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/site/cnkj/util/FileOperationUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/site/cnkj/util/FileOperationUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/site/cnkj/util/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/site/cnkj/util/RedisUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/site/cnkj/util/config/ElasticsearchConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/site/cnkj/util/config/ElasticsearchConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/target/classes/application-pro.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/target/classes/logback-spring-pro.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kafka/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Kafka/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/src/main/resources/application-pro.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/src/main/resources/application-pro.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -66,11 +26,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ElasticsearchConfig.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/site/cnkj/util/config/ElasticsearchConfig.java">
+      <file leaf-file-name="application-pro.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application-pro.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+            <state relative-caret-position="300">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application-dev.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/src/main/resources/application-dev.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="15" selection-start-column="15" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -109,7 +78,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ElasticSearch/src/main/java/site/cnkj/es/EsApplicationBoot.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/site/cnkj/util/config/SubDescription.java" />
         <option value="$PROJECT_DIR$/ElasticSearch/src/main/java/site/cnkj/es/service/impl/AsyncElasticsearchServiceImpl.java" />
         <option value="$PROJECT_DIR$/Kafka/pom.xml" />
@@ -137,7 +105,6 @@
         <option value="$PROJECT_DIR$/Kafka/src/main/java/site/cnkj/kafka/service/KafkaBatchMessageListenerService.java" />
         <option value="$PROJECT_DIR$/Kafka/src/main/java/site/cnkj/kafka/KafkaApplicationBoot.java" />
         <option value="$PROJECT_DIR$/Kafka/src/main/java/site/cnkj/kafka/service/KafkaService.java" />
-        <option value="$PROJECT_DIR$/Kafka/src/main/resources/application-dev.properties" />
         <option value="$PROJECT_DIR$/Kafka/src/main/java/site/cnkj/kafka/service/impl/KafkaServiceImpl.java" />
         <option value="$PROJECT_DIR$/Kafka/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/common/src/main/resources/application-dev.properties" />
@@ -160,6 +127,8 @@
         <option value="$PROJECT_DIR$/Kafka/src/main/java/site/cnkj/kafka/service/impl/KafkaBatchMessageListenerServiceImpl.java" />
         <option value="$PROJECT_DIR$/ElasticSearch/pom.xml" />
         <option value="$PROJECT_DIR$/common/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka/src/main/resources/application-pro.properties" />
+        <option value="$PROJECT_DIR$/Kafka/src/main/resources/application-dev.properties" />
       </list>
     </option>
   </component>
@@ -193,6 +162,15 @@
           <item name="common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="demo4java" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="demo4java" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
       </expand>
       <select />
     </treeState>
@@ -200,7 +178,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="645" />
     <option name="y" value="29" />
     <option name="width" value="1204" />
@@ -211,7 +189,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -263,6 +243,14 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo4java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo4java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="demo4java" type="b2602c69:ProjectViewProjectNode" />
@@ -354,12 +342,80 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="demo4java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo4java" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo4java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo4java" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo4java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo4java" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo4java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo4java" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo4java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo4java" type="462c0819:PsiDirectoryNode" />
+              <item name="Kafka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo4java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo4java" type="462c0819:PsiDirectoryNode" />
+              <item name="Kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo4java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo4java" type="462c0819:PsiDirectoryNode" />
+              <item name="Kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo4java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo4java" type="462c0819:PsiDirectoryNode" />
+              <item name="Kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo4java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo4java" type="462c0819:PsiDirectoryNode" />
+              <item name="Spark" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo4java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo4java" type="462c0819:PsiDirectoryNode" />
+              <item name="Spark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo4java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo4java" type="462c0819:PsiDirectoryNode" />
+              <item name="Spark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,7 +427,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="F:/tomcat-log-admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -577,7 +633,8 @@
       <workItem from="1550200541559" duration="13665000" />
       <workItem from="1550452728102" duration="698000" />
       <workItem from="1550473783630" duration="3547000" />
-      <workItem from="1550715171884" duration="14973000" />
+      <workItem from="1550715171884" duration="15285000" />
+      <workItem from="1550806190610" duration="176000" />
     </task>
     <task id="LOCAL-00001" summary="合并redis订阅功能模块到common中">
       <created>1547540279716</created>
@@ -622,11 +679,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129316000" />
+    <option name="totallyTimeSpent" value="129804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
@@ -640,7 +696,6 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.45365322" />
       <window_info anchor="bottom" id="TODO" order="13" />
-      <window_info anchor="bottom" id="Messages" order="2" weight="0.32824427" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
       <window_info id="Image Layers" order="1" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" />
@@ -649,25 +704,25 @@
       <window_info anchor="bottom" id="Run" order="9" weight="0.35005453" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32897604" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.20309168" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.195629" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.32824427" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.32824427" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32824427" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
       <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="bottom" id="Run" order="9" weight="0.35005453" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info id="Image Layers" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.35005453" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -675,6 +730,7 @@
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32897604" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.32824427" />
       <window_info anchor="bottom" id="TODO" order="13" />
@@ -683,7 +739,6 @@
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.3293348" />
       <window_info anchor="right" id="Maven Projects" order="9" weight="0.32995737" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.32824427" />
       <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.20309168" />
       <window_info anchor="right" id="Database" order="1" />
       <window_info anchor="bottom" id="Message" order="6" />
@@ -692,8 +747,9 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="10" visible="true" weight="0.45365322" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32824427" />
       <window_info anchor="right" id="Bean Validation" order="4" />
+      <window_info anchor="bottom" id="Debug" order="10" visible="true" weight="0.45365322" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -712,7 +768,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ElasticSearch2/src/main/resources/application.properties" />
     <entry file="file://$PROJECT_DIR$/ElasticSearch2/src/main/java/site/cnkj/es/config/ElasticConfig.java" />
     <entry file="file://$PROJECT_DIR$/ElasticSearch2/pom.xml" />
     <entry file="file://$PROJECT_DIR$/Spark/pom.xml">
@@ -757,13 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kafka/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Kafka/src/main/java/site/cnkj/kafka/service/impl/KafkaServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
@@ -788,13 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Kafka/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -813,9 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1037,9 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35">
           <caret line="14" column="54" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1047,9 +1082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="9" column="74" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1080,8 +1112,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/site/cnkj/util/config/ElasticsearchConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        <state relative-caret-position="480">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kafka/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="56" lean-forward="true" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application-pro.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
