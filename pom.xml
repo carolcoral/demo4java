@@ -12,9 +12,11 @@
     <modules>
         <module>ElasticSearch</module>
         <module>common</module>
-        <module>eureka</module>
+        <module>SpringCloudEureka</module>
         <module>Kafka</module>
         <module>Spark</module>
+        <module>Prometheus</module>
+        <module>SpringCloudConfig</module>
     </modules>
 
     <parent>

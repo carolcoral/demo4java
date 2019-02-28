@@ -1,0 +1,590 @@
+2019-02-27 11:28:10.705 logback [main] INFO  s.c.kafka.KafkaApplicationBootTest - The following profiles are active: dev
+2019-02-27 11:28:10.716 logback [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2e380628: startup date [Wed Feb 27 11:28:10 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7bb3a9fe
+2019-02-27 11:28:12.649 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-27 11:28:12.685 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-27 11:28:13.006 logback [main] WARN  o.s.w.c.s.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'kafkaListenerConfig' defined in file [H:\github\demo4java\Kafka\target\classes\site\cnkj\kafka\config\KafkaListenerConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [site.cnkj.kafka.config.KafkaListenerConfig]: Constructor threw exception; nested exception is java.lang.NullPointerException
+2019-02-27 11:28:13.028 logback [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-27 11:28:13.099 logback [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'kafkaListenerConfig' defined in file [H:\github\demo4java\Kafka\target\classes\site\cnkj\kafka\config\KafkaListenerConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [site.cnkj.kafka.config.KafkaListenerConfig]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1128)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:98)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:694)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:139)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [site.cnkj.kafka.config.KafkaListenerConfig]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:182)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1221)
+	... 40 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at site.cnkj.kafka.config.KafkaListenerConfig.<init>(KafkaListenerConfig.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:170)
+	... 42 common frames omitted
+2019-02-27 11:28:13.126 logback [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@a22cb6a] to prepare test instance [site.cnkj.kafka.KafkaApplicationBootTest@18dd5ed3]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'kafkaListenerConfig' defined in file [H:\github\demo4java\Kafka\target\classes\site\cnkj\kafka\config\KafkaListenerConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [site.cnkj.kafka.config.KafkaListenerConfig]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1128)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:98)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:694)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:139)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [site.cnkj.kafka.config.KafkaListenerConfig]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:182)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1221)
+	... 40 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at site.cnkj.kafka.config.KafkaListenerConfig.<init>(KafkaListenerConfig.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:170)
+	... 42 common frames omitted
+2019-02-27 11:28:53.022 logback [main] INFO  s.c.kafka.KafkaApplicationBootTest - The following profiles are active: dev
+2019-02-27 11:28:53.030 logback [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2e380628: startup date [Wed Feb 27 11:28:53 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7bb3a9fe
+2019-02-27 11:28:54.920 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-27 11:28:54.966 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-27 11:28:55.999 logback [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4255f75a-af60-3bf5-8056-bce86cd1d869
+2019-02-27 11:28:56.143 logback [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-27 11:28:56.545 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$a05e9f92] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 11:28:56.679 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e8c6910c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 11:28:57.849 logback [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-02-27 11:28:57.849 logback [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-27 11:28:57.916 logback [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-02-27 11:28:57.918 logback [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-27 11:28:58.227 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-27 11:28:59.756 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2e380628: startup date [Wed Feb 27 11:28:53 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7bb3a9fe
+2019-02-27 11:29:00.001 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-27 11:29:00.003 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-27 11:29:00.114 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-27 11:29:00.114 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-27 11:29:04.314 logback [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-02-27 11:29:06.361 logback [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-02-27 11:29:09.181 logback [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@2e380628: startup date [Wed Feb 27 11:28:53 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7bb3a9fe] and template loader path [classpath:/templates/]
+2019-02-27 11:29:09.182 logback [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-27 11:29:09.857 logback [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-02-27 11:29:09.881 logback [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-27 11:29:09.882 logback [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-27 11:29:09.882 logback [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-27 11:29:09.996 logback [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-02-27 11:29:10.011 logback [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483547
+2019-02-27 11:29:10.053 logback [main] INFO  s.c.kafka.KafkaApplicationBootTest - Started KafkaApplicationBootTest in 22.228 seconds (JVM running for 25.057)
+2019-02-27 11:29:11.070 logback [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = all
+	batch.size = 89590
+	bootstrap.servers = [10.25.246.47:9091]
+	buffer.memory = 30000
+	client.id = site.cnkj
+	compression.type = gzip
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 6000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 206407532
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-02-27 11:29:11.186 logback [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version : 1.1.1
+2019-02-27 11:29:11.186 logback [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId : 98b6346a977495f6
+2019-02-27 11:29:11.364 logback [kafka-producer-network-thread | site.cnkj] INFO  org.apache.kafka.clients.Metadata - Cluster ID: Vb-y9lu7RP2ZwsOk4LfUyg
+2019-02-27 11:29:11.412 logback [Thread-8] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@2e380628: startup date [Wed Feb 27 11:28:53 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7bb3a9fe
+2019-02-27 11:29:11.428 logback [Thread-8] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-02-27 11:29:11.431 logback [Thread-8] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application elasticsearch with eureka with status DOWN
+2019-02-27 11:29:11.446 logback [Thread-8] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483547
+2019-02-27 11:29:11.446 logback [Thread-8] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+2019-02-27 11:29:11.509 logback [Thread-8] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=site.cnkj] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2019-02-27 11:29:43.296 logback [main] INFO  s.c.kafka.KafkaApplicationBootTest - The following profiles are active: dev
+2019-02-27 11:29:43.302 logback [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2f5c1332: startup date [Wed Feb 27 11:29:43 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7bb3a9fe
+2019-02-27 11:29:45.740 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-27 11:29:45.793 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-27 11:29:46.975 logback [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4255f75a-af60-3bf5-8056-bce86cd1d869
+2019-02-27 11:29:47.139 logback [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-27 11:29:47.518 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$93b88e80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 11:29:47.755 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$dc207ffa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 11:29:49.630 logback [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-02-27 11:29:49.631 logback [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-27 11:29:49.641 logback [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-02-27 11:29:49.641 logback [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-27 11:29:50.036 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-27 11:29:51.499 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2f5c1332: startup date [Wed Feb 27 11:29:43 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7bb3a9fe
+2019-02-27 11:29:51.815 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-27 11:29:51.817 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-27 11:29:51.952 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-27 11:29:51.952 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-27 11:29:58.151 logback [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-02-27 11:30:01.604 logback [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-02-27 11:30:05.174 logback [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@2f5c1332: startup date [Wed Feb 27 11:29:43 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7bb3a9fe] and template loader path [classpath:/templates/]
+2019-02-27 11:30:05.176 logback [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-27 11:30:05.883 logback [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-02-27 11:30:05.911 logback [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-27 11:30:05.912 logback [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-27 11:30:05.913 logback [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-27 11:30:06.112 logback [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-02-27 11:30:06.173 logback [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483547
+2019-02-27 11:30:06.195 logback [main] INFO  s.c.kafka.KafkaApplicationBootTest - Started KafkaApplicationBootTest in 29.731 seconds (JVM running for 34.557)
+2019-02-27 11:30:07.766 logback [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = all
+	batch.size = 89590
+	bootstrap.servers = [10.25.246.47:9091]
+	buffer.memory = 300000
+	client.id = site.cnkj
+	compression.type = gzip
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 6000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 206407532
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-02-27 11:30:07.892 logback [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version : 1.1.1
+2019-02-27 11:30:07.892 logback [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId : 98b6346a977495f6
+2019-02-27 11:30:08.114 logback [kafka-producer-network-thread | site.cnkj] INFO  org.apache.kafka.clients.Metadata - Cluster ID: Vb-y9lu7RP2ZwsOk4LfUyg
+2019-02-27 14:13:42.137 logback [kafka-producer-network-thread | site.cnkj] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='keyName - 5ccacc5e-62c9-4b9b-9663-9ab95e4cc8f0' and payload='this is a test message >>>>>>>>>>>>> 7e89820d-1fe3-4978-b684-4fe4134f3504' to topic kafkatoflume:
+org.apache.kafka.common.errors.NetworkException: The server disconnected before a response was received.
+2019-02-27 14:13:42.154 logback [kafka-producer-network-thread | site.cnkj] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='keyName - 7ce1e14c-9c00-490f-9a0c-a07aa77f04ae' and payload='this is a test message >>>>>>>>>>>>> 8b84f865-0d7f-48c3-acdc-55f8c98a6bc7' to topic kafkatoflume:
+org.apache.kafka.common.errors.TimeoutException: Expiring 1 record(s) for kafkatoflume-1: 9798515 ms has passed since batch creation plus linger time
+2019-02-27 15:50:54.968 logback [kafka-producer-network-thread | site.cnkj] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='keyName - 91f02667-e85a-4977-a902-24d30bf70872' and payload='this is a test message >>>>>>>>>>>>> b9208bbe-8ed7-4360-a687-c2158dce07fe' to topic kafkatoflume:
+org.apache.kafka.common.errors.NetworkException: The server disconnected before a response was received.
+2019-02-27 15:50:54.968 logback [main] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='keyName - 59c071ec-d592-46b3-92d2-0e90729e8c45' and payload='this is a test message >>>>>>>>>>>>> 7896a4ec-e68c-4e36-b114-b85a3bf2e6f5' to topic kafkatoflume:
+org.apache.kafka.common.errors.TimeoutException: Failed to allocate memory within the configured max blocking time 6000 ms.
+2019-02-27 15:50:54.982 logback [kafka-producer-network-thread | site.cnkj] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='keyName - 08f6f9d5-9dce-4f27-b02f-3dfe1403bac0' and payload='this is a test message >>>>>>>>>>>>> 0fe37691-5aec-4c15-a4cf-9db40aa188d6' to topic kafkatoflume:
+org.apache.kafka.common.errors.NetworkException: The server disconnected before a response was received.
+2019-02-27 15:56:08.712 logback [main] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='keyName - 25a438ca-5992-43ab-9100-17999b432aec' and payload='this is a test message >>>>>>>>>>>>> 958c7f7c-18f3-40a6-b103-c339a8fe5697' to topic kafkatoflume:
+org.apache.kafka.common.errors.TimeoutException: Failed to allocate memory within the configured max blocking time 6000 ms.
+2019-02-27 15:56:08.730 logback [kafka-producer-network-thread | site.cnkj] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='keyName - d18b4e46-bf39-4d6a-b8fc-8a562ba92e6b' and payload='this is a test message >>>>>>>>>>>>> 211ab6dd-658b-453f-bea6-14b4dfc1ec1c' to topic kafkatoflume:
+org.apache.kafka.common.errors.NetworkException: The server disconnected before a response was received.
+2019-02-27 15:56:08.731 logback [kafka-producer-network-thread | site.cnkj] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='keyName - d62b903c-d61c-4acb-ab0d-859e7dc3a670' and payload='this is a test message >>>>>>>>>>>>> 36f8f39b-1321-42b9-8bc9-cc154fe62835' to topic kafkatoflume:
+org.apache.kafka.common.errors.NetworkException: The server disconnected before a response was received.
+2019-02-27 15:56:14.388 logback [main] INFO  s.c.kafka.KafkaApplicationBootTest - The following profiles are active: dev
+2019-02-27 15:56:14.396 logback [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2e380628: startup date [Wed Feb 27 15:56:14 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7bb3a9fe
+2019-02-27 15:56:16.628 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-27 15:56:16.664 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-27 15:56:17.869 logback [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4255f75a-af60-3bf5-8056-bce86cd1d869
+2019-02-27 15:56:18.020 logback [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-27 15:56:18.390 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$a05e9f92] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 15:56:18.527 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e8c6910c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 15:56:20.003 logback [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-02-27 15:56:20.004 logback [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-27 15:56:20.023 logback [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-02-27 15:56:20.023 logback [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-27 15:56:20.692 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-27 15:56:22.016 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2e380628: startup date [Wed Feb 27 15:56:14 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7bb3a9fe
+2019-02-27 15:56:22.219 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-27 15:56:22.221 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-27 15:56:22.393 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-27 15:56:22.396 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-27 15:56:26.485 logback [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-02-27 15:56:28.905 logback [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-02-27 15:56:32.272 logback [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@2e380628: startup date [Wed Feb 27 15:56:14 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7bb3a9fe] and template loader path [classpath:/templates/]
+2019-02-27 15:56:32.274 logback [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-27 15:56:32.865 logback [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-02-27 15:56:32.896 logback [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-27 15:56:32.898 logback [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-27 15:56:32.899 logback [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-27 15:56:33.009 logback [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-02-27 15:56:33.085 logback [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483547
+2019-02-27 15:56:33.114 logback [main] INFO  s.c.kafka.KafkaApplicationBootTest - Started KafkaApplicationBootTest in 25.497 seconds (JVM running for 30.324)
+2019-02-27 15:56:34.096 logback [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = all
+	batch.size = 89590
+	bootstrap.servers = [10.25.246.47:9091]
+	buffer.memory = 300000
+	client.id = site.cnkj
+	compression.type = gzip
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 6000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 206407532
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-02-27 15:56:34.179 logback [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version : 1.1.1
+2019-02-27 15:56:34.179 logback [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId : 98b6346a977495f6
+2019-02-27 15:56:34.326 logback [kafka-producer-network-thread | site.cnkj] INFO  org.apache.kafka.clients.Metadata - Cluster ID: Vb-y9lu7RP2ZwsOk4LfUyg
+2019-02-27 16:13:47.752 logback [kafka-producer-network-thread | site.cnkj] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='this is a test message >>>>>>>>>>>>> 685e7eaa-a766-4c42-8a98-bd2bc57424e7' to topic kafkatoflume:
+org.apache.kafka.common.errors.NetworkException: The server disconnected before a response was received.
+2019-02-27 16:13:47.752 logback [main] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='this is a test message >>>>>>>>>>>>> 7f91de57-5b4b-4e10-ab2f-c49a6f70d38f' to topic kafkatoflume:
+org.apache.kafka.common.errors.TimeoutException: Failed to allocate memory within the configured max blocking time 6000 ms.
+2019-02-27 16:13:47.752 logback [kafka-producer-network-thread | site.cnkj] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='this is a test message >>>>>>>>>>>>> 202a7643-301a-407e-aa46-59f6093f16f1' to topic kafkatoflume:
+org.apache.kafka.common.errors.NetworkException: The server disconnected before a response was received.
+2019-02-27 16:14:02.806 logback [main] INFO  s.c.kafka.KafkaApplicationBootTest - The following profiles are active: dev
+2019-02-27 16:14:02.818 logback [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2f5c1332: startup date [Wed Feb 27 16:14:02 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7bb3a9fe
+2019-02-27 16:14:04.756 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-27 16:14:04.807 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-27 16:14:05.832 logback [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4255f75a-af60-3bf5-8056-bce86cd1d869
+2019-02-27 16:14:05.953 logback [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-27 16:14:06.237 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$93b88e80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 16:14:06.341 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$dc207ffa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 16:14:07.369 logback [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-02-27 16:14:07.369 logback [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-27 16:14:07.380 logback [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-02-27 16:14:07.381 logback [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-27 16:14:08.021 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-27 16:14:09.335 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2f5c1332: startup date [Wed Feb 27 16:14:02 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7bb3a9fe
+2019-02-27 16:14:09.720 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-27 16:14:09.724 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-27 16:14:09.903 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-27 16:14:09.903 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-27 16:14:13.494 logback [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-02-27 16:14:15.582 logback [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-02-27 16:14:18.198 logback [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@2f5c1332: startup date [Wed Feb 27 16:14:02 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7bb3a9fe] and template loader path [classpath:/templates/]
+2019-02-27 16:14:18.199 logback [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-27 16:14:19.045 logback [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-02-27 16:14:19.102 logback [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-27 16:14:19.103 logback [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-27 16:14:19.108 logback [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-27 16:14:19.314 logback [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-02-27 16:14:19.335 logback [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483547
+2019-02-27 16:14:19.434 logback [main] INFO  s.c.kafka.KafkaApplicationBootTest - Started KafkaApplicationBootTest in 22.961 seconds (JVM running for 26.898)
+2019-02-27 16:14:20.450 logback [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = all
+	batch.size = 89590
+	bootstrap.servers = [10.25.246.47:9091]
+	buffer.memory = 300000
+	client.id = site.cnkj
+	compression.type = gzip
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 6000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 206407532
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-02-27 16:14:20.543 logback [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version : 1.1.1
+2019-02-27 16:14:20.543 logback [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId : 98b6346a977495f6
+2019-02-27 16:14:20.718 logback [kafka-producer-network-thread | site.cnkj] INFO  org.apache.kafka.clients.Metadata - Cluster ID: Vb-y9lu7RP2ZwsOk4LfUyg
+2019-02-27 16:18:55.973 logback [main] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='this is a test message for 1.8 >>>>>>>>>>>>> 09236f95-b624-4f2c-a9e9-7e0a7e7f5b3e' to topic kafkatoflume:
+org.apache.kafka.common.errors.TimeoutException: Failed to allocate memory within the configured max blocking time 6000 ms.
+2019-02-27 16:18:55.973 logback [kafka-producer-network-thread | site.cnkj] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='this is a test message for 1.8 >>>>>>>>>>>>> 66a4db8c-8c70-4e36-8a91-ff51456b5291' to topic kafkatoflume:
+org.apache.kafka.common.errors.NetworkException: The server disconnected before a response was received.
+2019-02-27 16:22:10.094 logback [main] INFO  s.c.kafka.KafkaApplicationBootTest - The following profiles are active: dev
+2019-02-27 16:22:10.127 logback [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2f5c1332: startup date [Wed Feb 27 16:22:10 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7bb3a9fe
+2019-02-27 16:22:12.207 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-27 16:22:12.240 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-27 16:22:13.293 logback [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4255f75a-af60-3bf5-8056-bce86cd1d869
+2019-02-27 16:22:13.597 logback [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-27 16:22:13.865 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$93b88e80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 16:22:13.964 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$dc207ffa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 16:22:15.147 logback [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-02-27 16:22:15.147 logback [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-27 16:22:15.160 logback [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-02-27 16:22:15.161 logback [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-02-27 16:22:15.655 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-27 16:22:16.781 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2f5c1332: startup date [Wed Feb 27 16:22:10 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7bb3a9fe
+2019-02-27 16:22:16.991 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-27 16:22:16.993 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-27 16:22:17.099 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-27 16:22:17.099 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-27 16:22:21.114 logback [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-02-27 16:22:23.260 logback [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-02-27 16:22:26.401 logback [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@2f5c1332: startup date [Wed Feb 27 16:22:10 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7bb3a9fe] and template loader path [classpath:/templates/]
+2019-02-27 16:22:26.523 logback [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-27 16:22:27.158 logback [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-02-27 16:22:27.177 logback [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-27 16:22:27.178 logback [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-27 16:22:27.179 logback [main] INFO  o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-27 16:22:27.329 logback [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-02-27 16:22:27.399 logback [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483547
+2019-02-27 16:22:27.417 logback [main] INFO  s.c.kafka.KafkaApplicationBootTest - Started KafkaApplicationBootTest in 24.12 seconds (JVM running for 27.716)
+2019-02-27 16:22:28.259 logback [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = all
+	batch.size = 89590
+	bootstrap.servers = [10.25.246.47:9091]
+	buffer.memory = 300000
+	client.id = site.cnkj
+	compression.type = gzip
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 6000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 206407532
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-02-27 16:22:28.351 logback [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version : 1.1.1
+2019-02-27 16:22:28.351 logback [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId : 98b6346a977495f6
+2019-02-27 16:22:28.513 logback [kafka-producer-network-thread | site.cnkj] INFO  org.apache.kafka.clients.Metadata - Cluster ID: Vb-y9lu7RP2ZwsOk4LfUyg
