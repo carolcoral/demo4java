@@ -52,17 +52,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="application-dev.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Kafka/src/main/resources/application-dev.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -508,7 +498,7 @@
       <workItem from="1550715171884" duration="15285000" />
       <workItem from="1550806190610" duration="176000" />
       <workItem from="1550818237669" duration="171000" />
-      <workItem from="1551163849178" duration="15925000" />
+      <workItem from="1551163849178" duration="16525000" />
     </task>
     <task id="LOCAL-00001" summary="合并redis订阅功能模块到common中">
       <created>1547540279716</created>
@@ -553,11 +543,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145900000" />
+    <option name="totallyTimeSpent" value="146500000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
@@ -577,7 +566,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.3293348" />
-      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.35005453" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.35005453" />
       <window_info anchor="bottom" id="Spring" order="0" weight="0.3293348" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32897604" />
       <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.19989339" />
