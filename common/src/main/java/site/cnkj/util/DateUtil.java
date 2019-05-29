@@ -338,6 +338,20 @@ public class DateUtil {
         }
         return timeList;
     }
+    
+    /**
+     * 当前时间与周期时间的时间差
+     * 时间单位 秒
+     * @param executorTime 执行周期
+     * @return 周期执行的等待时间
+     */
+    public static int executorsDelayTime(int executorTime){
+        //获取当前时间与周期时间的差
+        long nowTime = DateUtil.getCurrentTime();
+        int timeDiscrepancy = Integer.parseInt(String.valueOf(nowTime%(executorTime*1000)/1000));
+        int delayTime = executorTime-timeDiscrepancy;
+        return delayTime;
+    }
 
 }
 
