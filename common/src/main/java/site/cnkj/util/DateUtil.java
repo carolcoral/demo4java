@@ -7,15 +7,12 @@ import java.util.Date;
 import java.util.List;
 import java.util.TimeZone;
 
-/**
- * 时间工具类，包含了所有的基本时间使用、转换、获取
- */
 /*
- * @version 1.0 created by LXW on 2018/11/8 16:11
+ * @version 1.0 created by Carol on 2018/11/8 16:11
  */
 public class DateUtil {
 
-    public static class DATEFORMATE {
+    public static class DATEFORMATE{
         //基本单位 年
         public static final String BASETIME_yyyy = "yyyy";
         //基本单位 月
@@ -82,12 +79,11 @@ public class DateUtil {
 
     /**
      * 日期字符串转日期格式
-     *
-     * @param date       日期字符串
+     * @param date 日期字符串
      * @param timeFormat 转换后的日期格式
      * @return
      */
-    public static Date dateStringToDate(String date, String timeFormat) {
+    public static Date dateStringToDate(String date, String timeFormat){
         SimpleDateFormat sdf = new SimpleDateFormat(timeFormat);
         try {
             return sdf.parse(date);
@@ -97,18 +93,22 @@ public class DateUtil {
         return null;
     }
 
+    public static String timeStamp2fulltime(Date date){
+        SimpleDateFormat sdf = new SimpleDateFormat(DATEFORMATE.FULLTIMEBY_yMdHms);
+        return sdf.format(date);
+    }
 
     /**
      * 获取指定日期的零点时间戳
      *
-     * @param time       时间
+     * @param time 时间
      * @param timeFormat 时间对应格式
-     * @return 零点时间戳(0 : 0 : 0)
+     * @return 零点时间戳(0:0:0)
      */
-    public static long getTodayEarlyMorning(String time, String timeFormat) {
-        long current = translateDateToTimestamp(time, timeFormat);//当前时间毫秒数
-        long zero = current / (1000 * 3600 * 24) * (1000 * 3600 * 24) - TimeZone.getDefault().getRawOffset();//前一天的零点零分零秒的毫秒数
-        long startTime = zero + 24 * 60 * 60 * 1000;
+    public static long getTodayEarlyMorning(String time, String timeFormat){
+        long current=translateDatetoTimestamp(time, timeFormat);//当前时间毫秒数
+        long zero=current/(1000*3600*24)*(1000*3600*24)-TimeZone.getDefault().getRawOffset();//前一天的零点零分零秒的毫秒数
+        long startTime = zero + 24*60*60*1000;
         return startTime;
     }
 
@@ -116,92 +116,84 @@ public class DateUtil {
     /**
      * 获取指定日期的晚上24点的时间戳
      *
-     * @param time       时间
+     * @param time 时间
      * @param timeFormat 时间对应格式
-     * @return 当天24点的时间戳(23 : 59 : 59)
+     * @return 当天24点的时间戳(23:59:59)
      */
-    public static long getTodayLaterMorning(String time, String timeFormat) {
-        long current = translateDateToTimestamp(time, timeFormat);//当前时间毫秒数
-        long zero = current / (1000 * 3600 * 24) * (1000 * 3600 * 24) - TimeZone.getDefault().getRawOffset();//前一天的零点零分零秒的毫秒数
-        long endTime = zero + 24 * 60 * 60 * 1000 * 2 - 1;
+    public static long getTodayLaterMorning(String time, String timeFormat){
+        long current=translateDatetoTimestamp(time, timeFormat);//当前时间毫秒数
+        long zero=current/(1000*3600*24)*(1000*3600*24)-TimeZone.getDefault().getRawOffset();//前一天的零点零分零秒的毫秒数
+        long endTime = zero + 24*60*60*1000*2 - 1;
         return endTime;
     }
 
 
     /**
      * 获取当前日期的过去指定天数长度的零点时时间戳，包含当天
-     *
      * @param maxDays 3 (2018/10/11 0:0:0)
      * @return 2018/10/09 0:0:0 的时间戳
      */
-    public static long getLastDaysTimestamp(int maxDays) {
+    public static long getLastDaysTimestamp(int maxDays){
         //当前时间毫秒数
-        long current = System.currentTimeMillis();
+        long current=System.currentTimeMillis();
         //今天零点零分零秒的毫秒数
-        long zero = current / (1000 * 3600 * 24) * (1000 * 3600 * 24) - TimeZone.getDefault().getRawOffset();
-        long lastThirty = zero - 24 * 60 * 60 * 1000 * (maxDays - 1);
+        long zero=current/(1000*3600*24)*(1000*3600*24)-TimeZone.getDefault().getRawOffset();
+        long lastThirty = zero - 24*60*60*1000*(maxDays);
         return lastThirty;
     }
 
     /**
      * 获取过去指定时间的时间戳
-     *
-     * @param pastTime   指定的时间数量 5
-     * @param type       时间的类型 d日 H时 m分 s秒 S毫秒 不写默认单位秒
+     * @param pastTime 指定的时间数量 5
+     * @param type 时间的类型 d日 H时 m分 s秒 S毫秒 不写默认单位秒
      * @param timeFormat 转换后的时间戳格式化的标准 不写默认格式 年-月-日 时:分:秒
      * @return
      */
-    public static String getThePastTime(int pastTime, String type, String timeFormat) {
-        if (type == null) {
+    public static String getThePastTime(int pastTime, String type, String timeFormat){
+        if (type == null){
             type = "s";
         }
-        if (timeFormat == null) {
+        if (timeFormat == null){
             timeFormat = DATEFORMATE.FULLTIMEBY_yMdHmsS;
         }
         long date = System.currentTimeMillis();
         Long now_time = new Long(1);
-        if ("S".equals(type)) {
+        if ("S".equals(type)){
             now_time = date - pastTime;
-        } else if ("s".equals(type)) {
-            now_time = date - pastTime * 1000;
-        } else if ("m".equals(type)) {
-            now_time = date - pastTime * 1000 * 60;
-        } else if ("H".equals(type)) {
-            now_time = date - pastTime * 1000 * 60 * 60;
-        } else if ("d".equals(type)) {
-            now_time = date - pastTime * 1000 * 60 * 60 * 24;
+        }else if ("s".equals(type)){
+            now_time = date - pastTime*1000;
+        }else if ("m".equals(type)){
+            now_time = date - pastTime*1000*60;
+        }else if ("H".equals(type)){
+            now_time = date - pastTime*1000*60*60;
+        }else if ("d".equals(type)){
+            now_time = date - pastTime*1000*60*60*24;
         }
         String finalTime = translateTimeToDate(now_time, timeFormat);
         return finalTime;
     }
 
-    public static String getThePastTime(int pastTime) {
+    public static String getThePastTime(int pastTime){
         return getThePastTime(pastTime, null, null);
     }
 
-    public static String getThePastTime(int pastTime, String type) {
+    public static String getThePastTime(int pastTime, String type){
         return getThePastTime(pastTime, type, null);
     }
 
     /**
      * 获取当前系统时间的时间戳
-     * @param nano 时间戳长度表示不同级别的时间
-     * @return
+     * @return 时间戳
      */
-    public static Long getCurrentTime(int... nano) {
-        int type = nano.length == 0?13:nano[0];
-        if (type == 14){
-            return System.nanoTime();
-        }
+    public static Long getCurrentTime(){
         return System.currentTimeMillis();
     }
 
     /**
      * 获取指定格式的当前时间
-     *
      * @return 时间
      */
-    public static String getNowTimeByFormat(String timeFormat) {
+    public static String getNowTimeByFormat(String timeFormat){
         Date date = new Date();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(timeFormat);
         String today = simpleDateFormat.format(date);
@@ -210,12 +202,11 @@ public class DateUtil {
 
     /**
      * 转换时间戳位时间格式
-     *
-     * @param timestamp  时间戳(long)
+     * @param timestamp 时间戳(long)
      * @param timeFormat 转换的时间格式
      * @return 时间
      */
-    public static String translateTimeToDate(Long timestamp, String timeFormat) {
+    public static String translateTimeToDate(Long timestamp, String timeFormat){
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(timeFormat);
         String da = simpleDateFormat.format(timestamp);
         return da;
@@ -223,12 +214,11 @@ public class DateUtil {
 
     /**
      * 字符串转成时间格式
-     *
-     * @param time       字符串
+     * @param time 字符串
      * @param timeFormat 转换格式
      * @return 时间格式
      */
-    public static Date translateStringToDate(String time, String timeFormat) {
+    public static Date translateStringToDate(String time, String timeFormat){
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(timeFormat);
         Date da = null;
         try {
@@ -240,13 +230,30 @@ public class DateUtil {
     }
 
     /**
+     * 13位时间戳转date格式
+     * @param timestamp 时间戳
+     * @param timeFormat 时间格式
+     * @return
+     */
+    public static Date translateTimestampToDate(Long timestamp, String timeFormat){
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(timeFormat);
+        String time = translateTimeToDate(timestamp, timeFormat);
+        Date da = null;
+        try {
+            da = simpleDateFormat.parse(time);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return da;
+    }
+
+    /**
      * 时间转时间戳
-     *
-     * @param time       需要转换的时间
+     * @param time 需要转换的时间
      * @param timeFormat 时间对应的格式
      * @return 13位时间戳
      */
-    public static Long translateDateToTimestamp(String time, String timeFormat) {
+    public static Long translateDatetoTimestamp(String time, String timeFormat){
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(timeFormat);
         Date date = null;
         try {
@@ -261,13 +268,12 @@ public class DateUtil {
 
     /**
      * 序列化字符串为时间格式
-     *
-     * @param time           需要转换的字符串 (20181011 10:11:12.013)
-     * @param timeFormat     字符串对应的时间格式 (yyyyMMdd HH:mm:ss.SSS)
+     * @param time 需要转换的字符串 (20181011 10:11:12.013)
+     * @param timeFormat 字符串对应的时间格式 (yyyyMMdd HH:mm:ss.SSS)
      * @param timeTranselate 转换后需要的字符串格式 (yyyy年M月dd日 HH时mm分ss秒SSS毫秒)
      * @return 2018年10月11日 10时11分12秒13毫秒
      */
-    public static String serializationDate(String time, String timeFormat, String timeTranselate) {
+    public static String serializationDate(String time, String timeFormat, String timeTranselate){
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(timeFormat);
         try {
             Date date = simpleDateFormat.parse(time);
@@ -282,18 +288,17 @@ public class DateUtil {
 
     /**
      * 获取指定天数前的日期集合，包含当天
-     *
-     * @param num           天数
-     * @param time          时间
-     * @param timeFormat    时间格式
+     * @param num 天数
+     * @param time 时间
+     * @param timeFormat 时间格式
      * @param timeTranslate 输出格式
      * @return 日期集合
      */
-    public static List getDesignationDay(int num, String time, String timeFormat, String timeTranslate) {
+    public static List getDesignationDay(int num, String time, String timeFormat, String timeTranslate){
         List days = new ArrayList();
-        Long timestamp_time = translateDateToTimestamp(time, timeFormat);
+        Long timestamp_time = translateDatetoTimestamp(time, timeFormat);
         for (int i = 0; i < num; i++) {
-            Long new_time = timestamp_time - i * 24 * 60 * 60 * 1000;
+            Long new_time = timestamp_time - i*24*60*60*1000;
             String today = translateTimeToDate(new_time, timeTranslate);
             days.add(today);
         }
@@ -304,28 +309,28 @@ public class DateUtil {
     /**
      * 时间切割机，小时切割
      *
-     * @param cutTime   切割小时数 2小时 = 2
+     * @param cutTime 切割小时数 2小时 = 2
      * @param startTime 开始时间戳 10位
-     * @param endTime   结束时间戳 10位
+     * @param endTime 结束时间戳 10位
      * @return 切割后时间段列表
      */
     public static List<String> splitTimestamp(int cutTime, long startTime, long endTime) {
         List<String> timeList = new ArrayList<>();
         startTime = startTime * 1000;
         endTime = endTime * 1000;
-        if (cutTime <= 0) {
+        if (cutTime <= 0){
             timeList.add(String.valueOf(String.valueOf(startTime).concat(",").concat(String.valueOf(endTime))));
-        } else if (cutTime > 0 && endTime > startTime) {
-            long cut = ((endTime - startTime) / 3600000 / cutTime) + ((endTime - startTime) / 3600000 % cutTime);
+        }else if (cutTime > 0 && endTime > startTime){
+            long cut = ((endTime - startTime) / 3600000 /cutTime) + ((endTime - startTime) / 3600000 % cutTime);
             long timeInterval = (endTime - startTime) / cut;
-            while (true) {
-                if (startTime < endTime) {
-                    if ((startTime + timeInterval) > endTime) {
+            while(true){
+                if (startTime < endTime){
+                    if ((startTime + timeInterval) > endTime){
                         timeList.add(String.valueOf(String.valueOf(startTime).concat(",").concat(String.valueOf(endTime))));
-                    } else {
-                        timeList.add(String.valueOf(String.valueOf(startTime).concat(",").concat(String.valueOf(startTime + timeInterval))));
+                    }else {
+                        timeList.add(String.valueOf( String.valueOf(startTime).concat(",").concat(String.valueOf(startTime + timeInterval))));
                     }
-                } else if (startTime >= endTime) {
+                }else if (startTime >= endTime){
                     break;
                 }
                 startTime = startTime + timeInterval;
@@ -335,3 +340,4 @@ public class DateUtil {
     }
 
 }
+
