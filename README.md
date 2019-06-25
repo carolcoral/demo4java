@@ -5,7 +5,7 @@
 ### Redis
 * 1.If you want to use redis by single, you should impoert the "RedisConfg" only.
 
-```
+```java
 @SpringBootApplication
 @ComponentScan(basePackages = "site.cnkj.*",
         basePackageClasses = {
@@ -29,14 +29,14 @@ public class CnkjApplication {
 
 > Then you can autowire it where you use the redisUtil.
 
-```
+```java
 @Autowired
 private RedisUtil redisUtil;
 ```
 
 * 2.If you want to use redis by sentinel, you should impoert the "RedisConfg" and "RedisSentinelConfig".
 
-```
+```java
 @SpringBootApplication
 @ComponentScan(basePackages = "site.cnkj.*",
         basePackageClasses = {
@@ -61,14 +61,14 @@ public class CnkjApplication {
 
 > Then you can autowire it where you use the redisUtil.
 
-```
+```java
 @Autowired
 private RedisUtil redisUtil;
 ```
 
 * 3.If you want to use redis by cluster, you should impoert the "RedisConfg" and "RedisClusterConfig".
 
-```
+```java
 @SpringBootApplication
 @ComponentScan(basePackages = "site.cnkj.*",
         basePackageClasses = {
@@ -93,7 +93,7 @@ public class CnkjApplication {
 
 > Then you can autowire it where you use the redisUtil.
 
-```
+```java
 @Autowired
 private RedisUtil redisUtil;
 ```
