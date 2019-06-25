@@ -3,7 +3,7 @@
 ## How to use
 
 ### Redis
-* 1. If you want to use redis by single, you should impoert the "RedisConfg" only.
+* 1.If you want to use redis by single, you should impoert the "RedisConfg" only.
 
 ```
 @SpringBootApplication
@@ -34,7 +34,7 @@ public class CnkjApplication {
 private RedisUtil redisUtil;
 ```
 
-* 2. If you want to use redis by sentinel, you should impoert the "RedisConfg" and "RedisSentinelConfig".
+* 2.If you want to use redis by sentinel, you should impoert the "RedisConfg" and "RedisSentinelConfig".
 
 ```
 @SpringBootApplication
@@ -66,7 +66,7 @@ public class CnkjApplication {
 private RedisUtil redisUtil;
 ```
 
-* 3. If you want to use redis by cluster, you should impoert the "RedisConfg" and "RedisClusterConfig".
+* 3.If you want to use redis by cluster, you should impoert the "RedisConfg" and "RedisClusterConfig".
 
 ```
 @SpringBootApplication
