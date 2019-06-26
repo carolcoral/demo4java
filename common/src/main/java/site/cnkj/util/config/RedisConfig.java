@@ -22,7 +22,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 @Configuration
 public class RedisConfig {
 
-    @Value("${spring.application.name:''}")
+    @Value("${spring.redis.name:''}")
     private String redisName = "";
 
     @Bean
@@ -49,9 +49,7 @@ public class RedisConfig {
 
     @Bean(name = "redisUtil")
     public RedisUtil redisUtil(RedisTemplate<String, Object> redisTemplate) {
-        RedisUtil redisUtil = new RedisUtil();
-        redisUtil.setRedisTemplate(redisTemplate);
-        redisUtil.setRedisName(redisName);
+        RedisUtil redisUtil = new RedisUtil(redisTemplate, redisName);
         return redisUtil;
     }
 
