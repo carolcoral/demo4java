@@ -54,11 +54,10 @@ public class RSADemo {
         return cipherText;
     }
 
-    public static void main(String[] args) throws IOException, GeneralSecurityException {
-        // TODO Auto-generated method stub
-        String plainText = "kdfao9@#&^kdsfa";
-        String cipherText = enc(plainText);
-        System.out.println("encypted text:\n"+ cipherText);
-    }
+    //public static void main(String[] args) throws IOException, GeneralSecurityException {
+    //    String plainText = "kdfao9@#&^kdsfa";
+    //    String cipherText = enc(plainText);
+    //    System.out.println("encypted text:\n"+ cipherText);
+    //}
 
 }

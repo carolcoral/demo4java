@@ -95,8 +95,8 @@ public class FileEncryptDecrypt {
     }
 
 
-    public static void main(String [] args) throws Exception {
-        encrypt("F:\\dls\\chunk\\config\\rsa_public_key.der", "C:\\Users\\Carol\\Desktop\\file\\868663032830438_1554947856915.log", "F:\\868663032830438_1554947856915.log");
-    }
+    //public static void main(String [] args) throws Exception {
+    //    encrypt("F:\\dls\\chunk\\config\\rsa_public_key.der", "C:\\Users\\Carol\\Desktop\\file\\868663032830438_1554947856915.log", "F:\\868663032830438_1554947856915.log");
+    //}
 
 }

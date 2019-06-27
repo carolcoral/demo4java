@@ -103,21 +103,21 @@ public final class JacksonUtil {
         return null;
     }
 
-    public static void main(String[] args) throws JSONException {
-        String jsonstr1 = "{\"code\":\"000000\",\"desc\":\"啊啊啊啊\",\"zxc\":\"asd\"}";
-        String jsonstr = "{\"code\":\"000000\",\"zxc\":{\n" +
-                "\t\"formatId\": \"999992\",\n" +
-                "\t\"code\": \"000000\",\n" +
-                "\t\"suffix\": \"mp3\",\n" +
-                "\t\"url\": \"http://dlsdownfree.nf.migu.cn/wlansst?pars=CI=640463009561600913000000402342/F=999992/T=59167265698000/CH=d57dcf13-2c9f-45ad-9bcf-c15df69cc279/S=62ccd0dbe7/k=f45ad3fa9cbfc83c/t=1539740364/FN=filename.mp3\",\n" +
-                "\t\"contentId\": \"600913000000402342\",\n" +
-                "\t\"size\": \"776611\",\n" +
-                "\t\"info\": \"success\"\n" +
-                "}}";
-        Map<String, Object> br = toObject(jsonstr, Map.class);
-        System.out.println(getType(br.get("zxc")));
-        // System.out.println(br.getDesc());
-    }
+    //public static void main(String[] args) throws JSONException {
+    //    String jsonstr1 = "{\"code\":\"000000\",\"desc\":\"啊啊啊啊\",\"zxc\":\"asd\"}";
+    //    String jsonstr = "{\"code\":\"000000\",\"zxc\":{\n" +
+    //            "\t\"formatId\": \"999992\",\n" +
+    //            "\t\"code\": \"000000\",\n" +
+    //            "\t\"suffix\": \"mp3\",\n" +
+    //            "\t\"url\": \"http://dlsdownfree.nf.migu.cn/wlansst?pars=CI=640463009561600913000000402342/F=999992/T=59167265698000/CH=d57dcf13-2c9f-45ad-9bcf-c15df69cc279/S=62ccd0dbe7/k=f45ad3fa9cbfc83c/t=1539740364/FN=filename.mp3\",\n" +
+    //            "\t\"contentId\": \"600913000000402342\",\n" +
+    //            "\t\"size\": \"776611\",\n" +
+    //            "\t\"info\": \"success\"\n" +
+    //            "}}";
+    //    Map<String, Object> br = toObject(jsonstr, Map.class);
+    //    System.out.println(getType(br.get("zxc")));
+    //    // System.out.println(br.getDesc());
+    //}
 
     public static String getType(Object object) {
         String typeName = object.getClass().getName();
