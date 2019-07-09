@@ -956,5 +956,83 @@ public class RedisUtil {
         }
         return null;
     }
+    
+        public Set scan(Long count, String pattern){
+        Set set = new HashSet();
+        try {
+            ScanOptions scanOptions = ScanOptions.scanOptions().match(pattern).count(count).build();
+            Cursor cursor = redisTemplate.getConnectionFactory().getConnection().scan(scanOptions);
+            while (cursor.hasNext()){
+                set.add(cursor.next());
+            }
+            return set;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }finally {
+            redisTemplate.getConnectionFactory().getConnection().close();
+        }
+    }
+
+    public Set scanAll(){
+        Set set = new HashSet();
+        try {
+            ScanOptions scanOptions = ScanOptions.NONE;
+            Cursor cursor = redisTemplate.getConnectionFactory().getConnection().scan(scanOptions);
+            while (cursor.hasNext()){
+                set.add(cursor.next());
+            }
+            return set;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }finally {
+            redisTemplate.getConnectionFactory().getConnection().close();
+        }
+    }
+
+
+    public List<Map.Entry<Object, Object>> hscan(String key, long count, String pattern){
+        List<Map.Entry<Object, Object>> list = new ArrayList();
+        try {
+            if (StringUtils.isNotEmpty(redisName)){
+                key = redisName + ":" + key;
+            }
+            ScanOptions scanOptions = ScanOptions.scanOptions().match(pattern).count(count).build();
+            Cursor<Map.Entry<Object, Object>> cursor = redisTemplate.opsForHash().scan(key, scanOptions);
+            while (cursor.hasNext()){
+                list.add(cursor.next());
+            }
+            return list;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public List<Map.Entry<Object, Object>> hscanAll(String key){
+        List<Map.Entry<Object, Object>> list = new ArrayList();
+        try {
+            if (StringUtils.isNotEmpty(redisName)){
+                key = redisName + ":" + key;
+            }
+            ScanOptions scanOptions = ScanOptions.NONE;
+            Cursor<Map.Entry<Object, Object>> cursor = redisTemplate.opsForHash().scan(key, scanOptions);
+            while (cursor.hasNext()){
+                list.add(cursor.next());
+            }
+            return list;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public long hlen(String key){
+        if (StringUtils.isNotEmpty(redisName)){
+            key = redisName + ":" + key;
+        }
+        return redisTemplate.getConnectionFactory().getConnection().hLen(key.getBytes());
+    }
 
 }
