@@ -18,7 +18,7 @@
         <spring-cloud.version>Finchley.SR1</spring-cloud.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <esVersion>5.6.0</esVersion>
+        <esVersion>6.8.15</esVersion>
     </properties>
 
     <dependencies>
